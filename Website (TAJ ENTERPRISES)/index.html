@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitleTag">Taj Enterprises | Luxury Handcrafted Storage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- MULTI-FONT SUITE LOADED -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Inter:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,300..900;1,300..900&family=Outfit:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link id="siteFavicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000000' rx='100'/%3E%3Cdefs%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FDF4B8'/%3E%3Cstop offset='40%25' stop-color='%23D4AF37'/%3E%3Cstop offset='100%25' stop-color='%238F6E1C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M256,40 C256,40 248,72 230,104 C204,146 114,204 102,306 L124,306 C136,224 212,168 238,128 C248,110 256,76 256,76 C256,76 264,110 274,128 C300,168 376,224 388,306 L410,306 C398,204 308,146 282,104 C264,72 256,40 256,40 Z' fill='url(%23gold)'/%3E%3Ccircle cx='256' cy='36' r='6' fill='%23FDF4B8'/%3E%3Cpath d='M196,180 L210,138 L234,160 L256,132 L278,160 L302,138 L316,180 Z' fill='url(%23gold)'/%3E%3Cpolygon points='256,380 70,296 70,396 256,482' fill='%23705310' stroke='%23FDF4B8' stroke-width='2'/%3E%3Cpolygon points='256,380 442,296 442,396 256,482' fill='url(%23gold)' stroke='%23FDF4B8' stroke-width='2'/%3E%3Cpath d='M176,242 H336 V274 H276 V422 H236 V274 H176 Z' fill='url(%23gold)'/%3E%3Cpath d='M276,306 H326 V332 H276 Z M276,360 H326 V386 H276 Z' fill='url(%23gold)'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg-dark: #0a0c10;
+      --bg-surface: #12151e;
+      --bg-surface-elevated: #1a1e2b;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold: rgba(212, 175, 55, 0.3);
+      --gold-primary: #d4af37;
+      --gold-light: #f5df97;
+      --gold-gradient: linear-gradient(135deg, #f5df97 0%, #d4af37 50%, #997c23 100%);
+      --text-primary: #f6f7fb;
+      --text-secondary: #9aa2b5;
+      --text-muted: #646d82;
+      --accent-red: #d94354;
+      --accent-green: #10b981;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.45);
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: rgba(10, 12, 16, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-gold);
+    }
+    .nav-wrapper {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand-logo-img {
+      height: 48px;
+      width: auto;
+      max-width: 140px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .brand-text-block { display: flex; flex-direction: column; }
+    .brand-name {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+    .brand-tagline {
+      font-size: 0.68rem;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 3px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: var(--radius-sm);
+      font-size: 0.86rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #0b0d13;
+      font-weight: 700;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.25);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+    }
+    .btn-outline {
+      background: rgba(212, 175, 55, 0.05);
+      border-color: var(--border-gold);
+      color: var(--gold-light);
+    }
+    .btn-outline:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: var(--gold-primary);
+    }
+    .btn-dark {
+      background: var(--bg-surface-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+    }
+    .btn-dark:hover {
+      background: #23293a;
+      border-color: var(--border-gold);
+    }
+    .btn-danger { background: var(--accent-red); color: #fff; }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      padding: 90px 24px 75px;
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-gold);
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 3.1rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .hero h1 span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 30px;
+      max-width: 580px;
+    }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 16px; }
+
+    .hero-card-preview {
+      background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.12), transparent 70%), var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-card);
+    }
+    .preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .preview-sku { font-size: 0.75rem; font-weight: 700; color: var(--gold-light); letter-spacing: 1px; }
+    .preview-tag {
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 50px;
+      text-transform: uppercase;
+    }
+    .hero-preview-img-box {
+      width: 100%;
+      height: 310px;
+      background: #08090d;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 18px;
+    }
+    .hero-preview-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 14px;
+      transition: var(--transition);
+    }
+    .preview-details h3 { font-size: 1.25rem; color: #fff; margin-bottom: 6px; }
+    .preview-specs-pill { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .preview-specs-pill span {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* STATS STRIP */
+    .stats-strip {
+      border-top: 1px solid var(--border-gold);
+      border-bottom: 1px solid var(--border-gold);
+      background: #0d1017;
+      padding: 34px 24px;
+    }
+    .stats-container {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+    .stat-item h3 { font-size: 2.1rem; color: var(--gold-light); margin-bottom: 4px; }
+    .stat-item p { font-size: 0.82rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* SECTIONS */
+    .section-padding { padding: 85px 24px; }
+    .container { max-width: 1380px; margin: 0 auto; }
+    .section-head { text-align: center; max-width: 760px; margin: 0 auto 50px; }
+    .section-head .sub {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .section-head h2 { font-size: 2.25rem; color: #fff; margin-bottom: 14px; }
+    .section-head p { color: var(--text-secondary); font-size: 0.95rem; }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .feature-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      transition: var(--transition);
+    }
+    .feature-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-5px);
+      background: var(--bg-surface-elevated);
+    }
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+    .feature-card h3 { font-size: 1.15rem; color: #fff; margin-bottom: 10px; }
+    .feature-card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+    /* CATALOGUE */
+    .catalogue-section {
+      background: #0c0f16;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .catalogue-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+    .filter-pills { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+    .filter-btn {
+      padding: 7px 18px;
+      border-radius: 50px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--gold-primary);
+      color: #0b0d13;
+      font-weight: 700;
+      border-color: var(--gold-primary);
+    }
+    .search-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 9px 18px;
+      color: #fff;
+      font-size: 0.88rem;
+      outline: none;
+      min-width: 280px;
+      transition: var(--transition);
+    }
+    .search-box:focus { border-color: var(--gold-primary); }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 28px;
+    }
+    .product-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-gold);
+      background: var(--bg-surface-elevated);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+    }
+    .product-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background: #07090d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .product-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 14px;
+      transition: var(--transition);
+    }
+    .prod-sku-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(10, 12, 16, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      border: 1px solid var(--border-gold);
+    }
+    .prod-cat-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .product-card-body { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
+    .product-title { font-size: 1.15rem; color: #fff; margin-bottom: 12px; min-height: 48px; }
+    .product-pricing {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .price-tag { font-size: 1.35rem; font-weight: 800; color: var(--gold-light); }
+    .moq-tag { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; }
+    .product-specs { list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 20px; }
+    .product-specs li { display: flex; justify-content: space-between; }
+    .product-specs li span:first-child { color: var(--text-muted); }
+    .product-specs li span:last-child { color: #fff; font-weight: 500; }
+    .card-actions { margin-top: auto; }
+
+    /* INQUIRY SECTION (DUAL TABS) */
+    .b2b-section {
+      background: radial-gradient(circle at bottom left, rgba(212, 175, 55, 0.08), transparent 60%), var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-gold);
+      padding: 55px 45px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .b2b-content h2 { font-size: 2.2rem; color: #fff; margin-bottom: 16px; }
+    .b2b-content p { color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem; }
+    .b2b-checklist { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 26px; }
+    .b2b-checklist li { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-primary); }
+    .b2b-checklist svg { color: var(--gold-light); flex-shrink: 0; }
+
+    .inquiry-panel-card {
+      background: var(--bg-dark);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .inquiry-mode-switcher {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #080a0f;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .mode-tab-btn {
+      padding: 14px 16px;
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+      border-bottom: 2px solid transparent;
+    }
+    .mode-tab-btn:hover { color: #fff; }
+    .mode-tab-btn.active {
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.08);
+      border-bottom-color: var(--gold-primary);
+    }
+
+    .form-wrapper { padding: 30px; display: none; }
+    .form-wrapper.active { display: block; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .req-indicator { color: var(--gold-primary); font-size: 0.75rem; text-transform: none; }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 0.88rem;
+      outline: none;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus { border-color: var(--gold-primary); }
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #07080c;
+      border-top: 1px solid var(--border-gold);
+      padding: 65px 24px 30px;
+    }
+    .footer-grid {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+    .footer-col h4 { font-size: 1rem; color: var(--gold-light); margin-bottom: 18px; }
+    .footer-col p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; transition: var(--transition); }
+    .footer-links a:hover { color: var(--gold-light); padding-left: 4px; }
+    .footer-bottom {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding-top: 25px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* MASTER ADMIN CONSOLE MODAL */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-backdrop.active { display: flex; }
+
+    .auth-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      padding: 34px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .master-admin-modal {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      width: 100%;
+      max-width: 1240px;
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.9);
+      overflow: hidden;
+    }
+    .admin-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #090b10;
+    }
+    .admin-header h2 { font-size: 1.25rem; color: var(--gold-light); }
+    .admin-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .admin-sidebar {
+      background: #090c12;
+      border-right: 1px solid var(--border-subtle);
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow-y: auto;
+    }
+    .admin-tab-btn {
+      padding: 12px 16px;
+      background: transparent;
+      border: none;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+    }
+    .admin-tab-btn:hover { background: rgba(255, 255, 255, 0.05); color: #fff; }
+    .admin-tab-btn.active {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-light);
+      border-left: 3px solid var(--gold-primary);
+    }
+    .admin-main-panel {
+      padding: 26px;
+      overflow-y: auto;
+      background: var(--bg-surface);
+    }
+    .admin-tab-content { display: none; }
+    .admin-tab-content.active { display: block; }
+    .admin-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .admin-full-col { grid-column: 1 / -1; }
+
+    .admin-footer-bar {
+      padding: 14px 24px;
+      background: #090b10;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .admin-table-container { overflow-x: auto; margin-top: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    th, td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border-subtle); }
+    th { color: var(--gold-light); background: #080a0f; white-space: nowrap; }
+    td input, td select {
+      background: #080a0f;
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      width: 100%;
+      outline: none;
+    }
+    .img-preview-cell { width: 44px; height: 44px; object-fit: cover; border-radius: 4px; background: #000; }
+
+    /* FONT SELECTOR CARD STYLING */
+    .font-control-card {
+      background: #080a0f;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    .font-control-card h4 {
+      color: var(--gold-light);
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed var(--border-subtle);
+      padding-bottom: 6px;
+    }
+
+    /* CHECKBOX TOGGLE */
+    .checkbox-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 8px;
+    }
+    .checkbox-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--gold-primary);
+      cursor: pointer;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #141724;
+      border: 1px solid var(--gold-primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: var(--radius-sm);
+      font-size: 0.86rem;
+      z-index: 3000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    @media (max-width: 1024px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero p { margin: 0 auto 30px; }
+      .hero-buttons { justify-content: center; }
+      .features-grid { grid-template-columns: 1fr; }
+      .stats-container { grid-template-columns: repeat(2, 1fr); }
+      .b2b-section { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .admin-layout { grid-template-columns: 1fr; }
+      .admin-sidebar { flex-direction: row; overflow-x: auto; border-right: none; border-bottom: 1px solid var(--border-subtle); }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 2.2rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .admin-form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-wrapper">
+      <a href="#" class="brand">
+        <img id="navLogoImg" src="Logo_taj_enterprises.jpg" alt="Taj Enterprises Logo" class="brand-logo-img" onerror="this.style.display='none';">
+        <div class="brand-text-block">
+          <span class="brand-name" id="navBrandName">Taj Enterprises</span>
+          <span class="brand-tagline" id="navBrandTagline">Handcrafted Luxury Storage</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinksList">
+        <li><a href="#about" id="navLinkAbout">About & Craft</a></li>
+        <li><a href="#catalogue" id="navLinkCatalogue">Catalogue</a></li>
+        <li><a href="#wholesale" id="navLinkWholesale">B2B Wholesale</a></li>
+        <li><a href="#contact" id="navLinkContact">Inquiries</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-dark" id="openAdminBtn">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span id="navAdminBtnText">Admin Console</span>
+        </button>
+        <a id="navWhatsappBtn" href="https://wa.me/919953068456" target="_blank" class="btn btn-gold">
+          <span id="navWhatsappBtnText">WhatsApp Direct</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge">Direct Factory Manufacturer • New Delhi</div>
+      <h1 id="heroTitle">Exquisite Bridal <span>Bangle Boxes</span> & Luxury Vanity Cases</h1>
+      <p id="heroDesc">Manufactured using authentic gold and silver ZARI woven brocade, rust-resistant solid hardware, and protective Chawal lining designed to preserve gold, kundan, and glass jewelry without tarnish.</p>
+      
+      <div class="hero-buttons">
+        <a href="#catalogue" class="btn btn-gold" id="heroBtn1">Explore Collection</a>
+        <a href="#wholesale" class="btn btn-outline" id="heroBtn2">Wholesale & Custom Orders</a>
+      </div>
+    </div>
+
+    <!-- HERO FEATURED PREVIEW -->
+    <div class="hero-card-preview">
+      <div class="preview-header">
+        <span class="preview-sku" id="heroCardSku">MODEL: TE-ZR-NV02</span>
+        <span class="preview-tag" id="heroCardTag">Best Seller</span>
+      </div>
+      <div class="hero-preview-img-box">
+        <img id="heroPreviewImg" src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=70" alt="Featured Bangle Box">
+      </div>
+      <div class="preview-details">
+        <h3 id="heroCardTitle">Royal Navy Blue Floral Zari Box</h3>
+        <p id="heroCardSub" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Reinforced dual-rod wooden chassis with clear acrylic display top.</p>
+        <div class="preview-specs-pill">
+          <span id="heroCardPill1">Protective Chawal Lining</span>
+          <span id="heroCardPill2">40–50 Bangles</span>
+          <span id="heroCardPill3">Vintage Brass Latch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h3 id="stat1Val">15+</h3>
+        <p id="stat1Lbl">Years Handcrafting</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="stat2Val">100%</h3>
+        <p id="stat2Lbl">Chawal Tarnish Protection</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="stat3Val">50,000+</h3>
+        <p id="stat3Lbl">Boxes Dispatched</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="stat4Val">Pan-India</h3>
+        <p id="stat4Lbl">Wholesale Delivery</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT & CRAFTSMANSHIP -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="sub" id="aboutSub">Unmatched Craftsmanship</span>
+        <h2 id="aboutTitle">Built with Traditional Artistry & Structural Integrity</h2>
+        <p id="aboutDesc">Every piece produced at Taj Enterprises combines the richness of traditional Banarasi and Zari textile art with modern, durable joinery tailored for bridal trousseaus and retail jewelers.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          </div>
+          <h3 id="feat1Title">Authentic Zari Weaves</h3>
+          <p id="feat1Desc">Hand-selected brocade fabrics featuring detailed floral vines, chevron patterns, and metallic thread embroidery that retain their sheen for years.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7h-7L10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"></path></svg>
+          </div>
+          <h3 id="feat2Title">Protective Chawal Lining</h3>
+          <p id="feat2Desc">Our signature inner rice-embossed cushion prevents oxidation and scratches, keeping delicate bridal gold, kundan, and stone work completely protected.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3 id="feat3Title">Heavy-Duty Hardware</h3>
+          <p id="feat3Desc">Equipped with cast brass lock latches, ergonomic luggage-grade handles on vanity briefcases, and smooth acrylic viewing windows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT CATALOGUE -->
+  <section class="section-padding catalogue-section" id="catalogue">
+    <div class="container">
+      <div class="section-head">
+        <span class="sub" id="catSub">Wholesale Catalog</span>
+        <h2 id="catTitle">Handcrafted Box Models & Collections</h2>
+        <p id="catDesc">Explore our wide selection of single-rod, double-rod, display towers, and multi-rod bridal travel trunks. Click any item to begin a wholesale inquiry.</p>
+      </div>
+
+      <div class="catalogue-filter-bar">
+        <div class="filter-pills" id="dynamicFilterPills"></div>
+        <input type="text" class="search-box" id="searchInput" placeholder="Search by SKU, color, or model...">
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- B2B WHOLESALE & DUAL INQUIRY FORMS SECTION -->
+  <section class="section-padding" id="wholesale">
+    <div class="container">
+      <div class="b2b-section">
+        <!-- LEFT: B2B HIGHLIGHTS -->
+        <div class="b2b-content">
+          <span id="b2bSub" style="color: var(--gold-light); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1.5px;">B2B & Bulk Solutions</span>
+          <h2 id="b2bTitle">Custom Manufacturing for Jewelers & Boutiques</h2>
+          <p id="b2bDesc">We supply custom-branded packaging and bulk quantities to leading bridal boutiques, jewelry showrooms, and event planners across India and worldwide.</p>
+          
+          <ul class="b2b-checklist">
+            <li>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span id="b2bCheck1">Custom Fabric Colors (Red, Maroon, Navy, Gold, Ivory, Pastels)</span>
+            </li>
+            <li>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span id="b2bCheck2">Laser-engraved Brass Branding & Custom Logo Foiling</span>
+            </li>
+            <li>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span id="b2bCheck3">Tailored Compartment & Rod Sizing for Heavy Chudas</span>
+            </li>
+            <li>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span id="b2bCheck4">Fast bulk turnaround and transit-safe corrugated export packaging</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: DUAL INQUIRY PANEL -->
+        <div class="inquiry-panel-card" id="contact">
+          <div class="inquiry-mode-switcher">
+            <button type="button" class="mode-tab-btn active" id="tabBtnStandard" onclick="switchInquiryForm('standard')">
+              Standard Wholesale
+            </button>
+            <button type="button" class="mode-tab-btn" id="tabBtnCustom" onclick="switchInquiryForm('custom')">
+              Custom Box Inquiry (Max 800)
+            </button>
+          </div>
+
+          <!-- 1. STANDARD FORM -->
+          <div class="form-wrapper active" id="formWrapperStandard">
+            <h3 id="inquiryFormTitle" style="font-size: 1.2rem; margin-bottom: 6px; color: var(--gold-light);">Standard Wholesale Quotation</h3>
+            <p id="inquiryFormDesc" style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 18px;">Select regular catalog models and your preferred box color.</p>
+
+            <form id="wholesaleQuoteForm">
+              <div class="form-group">
+                <label id="lblQuoteName">Full Name / Business Name <span class="req-indicator">*</span></label>
+                <input type="text" id="quoteName" class="form-input" placeholder="e.g. Royal Jewelers" required>
+              </div>
+
+              <div class="form-group">
+                <label id="lblQuoteModel">Select Preferred Model <span class="req-indicator">*</span></label>
+                <select id="quoteModelDropdown" class="form-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label id="lblQuoteColor">Select Box Color <span class="req-indicator">*</span></label>
+                <select id="quoteColorDropdown" class="form-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label id="lblQuoteQty">Estimated Quantity (Pieces) <span class="req-indicator">*</span></label>
+                <input type="number" id="quoteQty" class="form-input" placeholder="e.g. 50" min="1" required>
+              </div>
+
+              <div class="form-group">
+                <label id="lblQuoteAddress">Delivery Address / City <span id="reqBadgeStdAddress" class="req-indicator">*</span></label>
+                <input type="text" id="quoteAddress" class="form-input" placeholder="e.g. Shop 12, Zaveri Bazaar, Mumbai">
+              </div>
+
+              <button type="submit" class="btn btn-gold" id="btnQuoteSubmit" style="width: 100%; margin-top: 6px;">
+                Send Wholesale Inquiry via WhatsApp
+              </button>
+            </form>
+          </div>
+
+          <!-- 2. CUSTOM BOX INQUIRY FORM (MAX 800 UNITS) -->
+          <div class="form-wrapper" id="formWrapperCustom">
+            <h3 id="customFormTitle" style="font-size: 1.2rem; margin-bottom: 6px; color: var(--gold-light);">Custom Box Manufacturing</h3>
+            <p id="customFormDesc" style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 18px;">Bespoke dimensions, custom fabric weaving, and branding (Production Limit: Max 800 Units).</p>
+
+            <form id="customBoxQuoteForm">
+              <div class="form-group">
+                <label id="lblCustomName">Full Name / Brand Name <span class="req-indicator">*</span></label>
+                <input type="text" id="customName" class="form-input" placeholder="e.g. Elegance Bridal Studio" required>
+              </div>
+
+              <div class="form-group">
+                <label id="lblCustomModel">Custom Box Type / Structure <span class="req-indicator">*</span></label>
+                <select id="customModelDropdown" class="form-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label id="lblCustomColor">Custom Fabric / Brocade Color <span class="req-indicator">*</span></label>
+                <select id="customColorDropdown" class="form-select"></select>
+              </div>
+
+              <div class="form-group">
+                <label id="lblCustomQty">Order Quantity (Max Limit 800) <span class="req-indicator">*</span></label>
+                <input type="number" id="customQty" class="form-input" placeholder="Enter quantity (1 to 800)" min="1" max="800" required>
+                <div class="form-note" id="customLimitNote">
+                  <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                  <span>Strict production capacity: Maximum 800 pieces per bespoke custom run.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label id="lblCustomAddress">Delivery Address / Destination <span id="reqBadgeCustAddress" class="req-indicator">*</span></label>
+                <input type="text" id="customAddress" class="form-input" placeholder="e.g. Commercial Hub, Karol Bagh, New Delhi">
+              </div>
+
+              <div class="form-group">
+                <label id="lblCustomNotes">Custom Specifications & Branding Notes</label>
+                <textarea id="customNotes" class="form-textarea" rows="2" placeholder="Describe rod length, velvet lining preference, brass logo embossing..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" id="btnCustomSubmit" style="width: 100%; margin-top: 6px;">
+                Submit Custom Box Inquiry (Max 800) via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <span class="brand-name" id="footerBrandName" style="font-size: 1.4rem;">Taj Enterprises</span>
+        <p id="footerAboutText" style="margin-top: 12px;">Premier Indian manufacturer of handcrafted bridal bangle boxes, jewelry vanity cases, and ceremonial packaging. Built with authentic Zari embroidery and Protective Chawal Lining.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footerCol2Title">Product Categories</h4>
+        <ul class="footer-links" id="footerCategoryLinks"></ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footerCol3Title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Craftsmanship & Materials</a></li>
+          <li><a href="#wholesale">Bulk & Custom Orders</a></li>
+          <li><a href="#contact">Wholesale Quote Form</a></li>
+          <li><a href="#" onclick="openAdminDirect(); return false;">Admin Console</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footerCol4Title">Factory & Sales Office</h4>
+        <p><strong id="footerCompanyName">Taj Enterprises</strong></p>
+        <p id="footerAddress">New Delhi, India</p>
+        <p style="margin-top: 10px;"><strong>Phone / WhatsApp:</strong> <span id="footerPhone">+91 99530 68456</span></p>
+        <p><strong>Email:</strong> <span id="footerEmail">mdfaizansariofficial@gmail.com</span></p>
+        <p><strong>Hours:</strong> <span id="footerHours">Mon - Sat: 9:30 AM - 7:30 PM</span></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p id="footerCopyText">&copy; 2026 Taj Enterprises. All rights reserved. Handcrafted in India.</p>
+      <p id="footerSubCopy">Designed for Luxury Storage & Bridal Packaging</p>
+    </div>
+  </footer>
+
+  <!-- AUTH MODAL -->
+  <div class="modal-backdrop" id="authModal">
+    <div class="auth-box">
+      <h3 style="font-size: 1.3rem; margin-bottom: 8px; color: var(--gold-light);">Admin Verification</h3>
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 22px;">Enter your PIN to open the Master Site Console.</p>
+      <input type="password" class="form-input" id="adminPinInput" placeholder="Enter PIN (Default: 1234)" style="text-align: center; font-size: 1.1rem; letter-spacing: 3px; margin-bottom: 18px;" autofocus>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn btn-outline" style="flex:1;" id="closeAuthBtn">Cancel</button>
+        <button class="btn btn-gold" style="flex:1;" id="submitPinBtn">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASTER ADMIN CONSOLE MODAL -->
+  <div class="modal-backdrop" id="adminModal">
+    <div class="master-admin-modal">
+      <div class="admin-header">
+        <h2>Taj Enterprises Master Admin Console</h2>
+        <button class="modal-close" id="closeAdminModalBtn" style="color:var(--text-secondary); background:none; border:none; font-size:1.6rem; cursor:pointer;">&times;</button>
+      </div>
+
+      <div class="admin-layout">
+        <!-- SIDEBAR TABS -->
+        <div class="admin-sidebar">
+          <button class="admin-tab-btn active" data-tab="tab-fonts">Typography & Fonts</button>
+          <button class="admin-tab-btn" data-tab="tab-colors">Box Colors Manager</button>
+          <button class="admin-tab-btn" data-tab="tab-categories">Categories Manager</button>
+          <button class="admin-tab-btn" data-tab="tab-inquiry-std">Standard Inquiry Form</button>
+          <button class="admin-tab-btn" data-tab="tab-inquiry-custom">Custom Form (Max 800)</button>
+          <button class="admin-tab-btn" data-tab="tab-products">Product Inventory</button>
+          <button class="admin-tab-btn" data-tab="tab-branding">Branding & Logo</button>
+          <button class="admin-tab-btn" data-tab="tab-hero">Hero Section</button>
+          <button class="admin-tab-btn" data-tab="tab-stats">Stats & Craft</button>
+          <button class="admin-tab-btn" data-tab="tab-b2b">B2B Content</button>
+          <button class="admin-tab-btn" data-tab="tab-contact">Contact & Footer</button>
+          <button class="admin-tab-btn" data-tab="tab-security">Security & PIN</button>
+        </div>
+
+        <!-- MAIN FORM PANELS -->
+        <div class="admin-main-panel">
+
+          <!-- TAB 1: MASTER TYPOGRAPHY & FONT CONTROLLER (NEW!) -->
+          <div class="admin-tab-content active" id="tab-fonts">
+            <h3 style="color:var(--gold-light); margin-bottom: 8px;">Master Typography & Font Changer</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 20px;">
+              Select custom fonts for every individual section, title, and paragraph across your website. Choose from royal luxury serifs, modern clean sans-serifs, and signature cursive scripts.
+            </p>
+
+            <!-- 1. HEADER & BRANDING FONTS -->
+            <div class="font-control-card">
+              <h4>1. Header & Navigation Typography</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>Brand Name ("Taj Enterprises")</label>
+                  <select class="form-select font-picker" id="font_brandName"></select>
+                </div>
+                <div class="form-group">
+                  <label>Brand Tagline ("Handcrafted Luxury Storage")</label>
+                  <select class="form-select font-picker" id="font_brandTagline"></select>
+                </div>
+                <div class="form-group">
+                  <label>Navigation Links (Menu Bar)</label>
+                  <select class="form-select font-picker" id="font_navLinks"></select>
+                </div>
+                <div class="form-group">
+                  <label>Header Buttons ("Admin" & "WhatsApp Direct")</label>
+                  <select class="form-select font-picker" id="font_navButtons"></select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. HERO SECTION FONTS -->
+            <div class="font-control-card">
+              <h4>2. Hero Banner Typography</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>Top Manufacturer Badge</label>
+                  <select class="form-select font-picker" id="font_heroBadge"></select>
+                </div>
+                <div class="form-group">
+                  <label>Main Hero Headline (H1)</label>
+                  <select class="form-select font-picker" id="font_heroTitle"></select>
+                </div>
+                <div class="form-group admin-full-col">
+                  <label>Hero Description Paragraph</label>
+                  <select class="form-select font-picker" id="font_heroDesc"></select>
+                </div>
+                <div class="form-group">
+                  <label>Hero Action Buttons</label>
+                  <select class="form-select font-picker" id="font_heroButtons"></select>
+                </div>
+                <div class="form-group">
+                  <label>Featured Box Preview Card Title</label>
+                  <select class="form-select font-picker" id="font_heroCardTitle"></select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. STATS & CRAFTSMANSHIP FONTS -->
+            <div class="font-control-card">
+              <h4>3. Statistics Strip & Craftsmanship Features</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>Stat Counter Numbers ("15+", "100%", etc.)</label>
+                  <select class="form-select font-picker" id="font_statNumbers"></select>
+                </div>
+                <div class="form-group">
+                  <label>Stat Counter Subtitles</label>
+                  <select class="form-select font-picker" id="font_statLabels"></select>
+                </div>
+                <div class="form-group">
+                  <label>Section Headings ("Built with Traditional Artistry...")</label>
+                  <select class="form-select font-picker" id="font_sectionHeadings"></select>
+                </div>
+                <div class="form-group">
+                  <label>Section Subtitles ("Unmatched Craftsmanship")</label>
+                  <select class="form-select font-picker" id="font_sectionSubtitles"></select>
+                </div>
+                <div class="form-group">
+                  <label>Feature Card Titles ("Authentic Zari Weaves")</label>
+                  <select class="form-select font-picker" id="font_featureCardTitles"></select>
+                </div>
+                <div class="form-group">
+                  <label>Feature Card Descriptions</label>
+                  <select class="form-select font-picker" id="font_featureCardDesc"></select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. PRODUCT CATALOGUE FONTS -->
+            <div class="font-control-card">
+              <h4>4. Product Catalogue Typography</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>Catalogue Category Filter Pills</label>
+                  <select class="form-select font-picker" id="font_catFilterPills"></select>
+                </div>
+                <div class="form-group">
+                  <label>Product Card Titles (Box Names)</label>
+                  <select class="form-select font-picker" id="font_productTitles"></select>
+                </div>
+                <div class="form-group">
+                  <label>Product Price Tags (₹)</label>
+                  <select class="form-select font-picker" id="font_productPrices"></select>
+                </div>
+                <div class="form-group">
+                  <label>Product Specifications List & MOQ</label>
+                  <select class="form-select font-picker" id="font_productSpecs"></select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. B2B & INQUIRY FORMS FONTS -->
+            <div class="font-control-card">
+              <h4>5. B2B Section & Dual Inquiry Forms</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>B2B Section Title</label>
+                  <select class="form-select font-picker" id="font_b2bTitle"></select>
+                </div>
+                <div class="form-group">
+                  <label>B2B Checklist Bullet Points</label>
+                  <select class="form-select font-picker" id="font_b2bChecklist"></select>
+                </div>
+                <div class="form-group">
+                  <label>Inquiry Forms Titles</label>
+                  <select class="form-select font-picker" id="font_inquiryTitles"></select>
+                </div>
+                <div class="form-group">
+                  <label>Inquiry Form Field Labels & Placeholders</label>
+                  <select class="form-select font-picker" id="font_inquiryLabels"></select>
+                </div>
+                <div class="form-group admin-full-col">
+                  <label>Inquiry Form Submit Buttons</label>
+                  <select class="form-select font-picker" id="font_inquirySubmitBtn"></select>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. FOOTER FONTS -->
+            <div class="font-control-card">
+              <h4>6. Footer Typography</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label>Footer Column Titles</label>
+                  <select class="form-select font-picker" id="font_footerTitles"></select>
+                </div>
+                <div class="form-group">
+                  <label>Footer Body Text, Links & Contact Details</label>
+                  <select class="form-select font-picker" id="font_footerText"></select>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- TAB 2: BOX COLORS MANAGER -->
+          <div class="admin-tab-content" id="tab-colors">
+            <h3 style="color:var(--gold-light); margin-bottom: 8px;">Box Color Swatches & Dropdowns</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 16px;">
+              Add, edit, or delete colors available in both the Standard and Custom wholesale inquiry dropdowns.
+            </p>
+
+            <div style="display:flex; gap:10px; margin-bottom: 16px;">
+              <input type="text" id="newColorInput" class="form-input" placeholder="Type new color name (e.g. Royal Emerald Green, Rose Gold)..." style="flex:1;">
+              <button type="button" class="btn btn-gold" id="addColorBtn">+ Add Color</button>
+            </div>
+
+            <div class="admin-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Color Option Name</th>
+                    <th style="width: 100px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="colorsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 3: CATEGORIES MANAGER -->
+          <div class="admin-tab-content" id="tab-categories">
+            <h3 style="color:var(--gold-light); margin-bottom: 8px;">Dynamic Category Manager</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 16px;">
+              Manage product categories. Updates reflect instantly across catalog filter pills, product dropdowns, and footer links.
+            </p>
+
+            <div style="display:flex; gap:10px; margin-bottom: 16px;">
+              <input type="text" id="newCategoryInput" class="form-input" placeholder="Type new category (e.g. Chuda Boxes, Travel Cases)..." style="flex:1;">
+              <button type="button" class="btn btn-gold" id="addCategoryBtn">+ Add Category</button>
+            </div>
+
+            <div class="admin-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Category Name</th>
+                    <th style="width: 100px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="categoryTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 4: STANDARD INQUIRY FORM CONTROLS -->
+          <div class="admin-tab-content" id="tab-inquiry-std">
+            <h3 style="color:var(--gold-light); margin-bottom: 8px;">Standard Wholesale Inquiry Settings</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 16px;">
+              Customize labels, placeholders, address requirements, and model choices.
+            </p>
+
+            <div class="admin-form-grid">
+              <div class="form-group admin-full-col">
+                <label>Form Title</label>
+                <input type="text" id="admInqTitle" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Form Description</label>
+                <textarea id="admInqDesc" class="form-textarea" rows="2"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Name Field Label</label>
+                <input type="text" id="admLblName" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Name Field Placeholder</label>
+                <input type="text" id="admPlcName" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Model Dropdown Label</label>
+                <input type="text" id="admLblModel" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Color Dropdown Label</label>
+                <input type="text" id="admLblColor" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Quantity Field Label</label>
+                <input type="text" id="admLblQty" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Quantity Field Placeholder</label>
+                <input type="text" id="admPlcQty" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Address Field Label</label>
+                <input type="text" id="admLblAddress" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Address Field Placeholder</label>
+                <input type="text" id="admPlcAddress" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="admChkAddressRequired">
+                  <span><strong>Make Delivery Address "REQUIRED"</strong> (Prevents submission if blank)</span>
+                </label>
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Submit Button Text</label>
+                <input type="text" id="admBtnSubmit" class="form-input">
+              </div>
+            </div>
+
+            <h4 style="color:var(--gold-light); margin: 24px 0 10px;">Standard Models Dropdown Options</h4>
+            <div style="display:flex; gap:10px; margin-bottom: 14px;">
+              <input type="text" id="newInquiryOptionInput" class="form-input" placeholder="Type model choice..." style="flex:1;">
+              <button type="button" class="btn btn-gold" id="addInquiryOptionBtn">+ Add Model Option</button>
+            </div>
+            <div class="admin-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Model Option Name</th>
+                    <th style="width: 100px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="inquiryOptionsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 5: CUSTOM BOXES INQUIRY CONTROLS (MAX 800) -->
+          <div class="admin-tab-content" id="tab-inquiry-custom">
+            <h3 style="color:var(--gold-light); margin-bottom: 8px;">Custom Box Inquiry (Max 800 Units)</h3>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom: 16px;">
+              Configure parameters for custom bespoke packaging orders, enforce maximum batch limits, and toggle address rules.
+            </p>
+
+            <div class="admin-form-grid">
+              <div class="form-group admin-full-col">
+                <label>Custom Form Title</label>
+                <input type="text" id="admCustTitle" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Custom Form Description</label>
+                <textarea id="admCustDesc" class="form-textarea" rows="2"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Name Field Label</label>
+                <input type="text" id="admCustLblName" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Model/Structure Dropdown Label</label>
+                <input type="text" id="admCustLblModel" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Color Dropdown Label</label>
+                <input type="text" id="admCustLblColor" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Maximum Unit Limit (Strict Constraint)</label>
+                <input type="number" id="admCustMaxLimit" class="form-input" value="800">
+              </div>
+              <div class="form-group">
+                <label>Quantity Field Label</label>
+                <input type="text" id="admCustLblQty" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Quantity Field Placeholder</label>
+                <input type="text" id="admCustPlcQty" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Address Field Label</label>
+                <input type="text" id="admCustLblAddress" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Address Field Placeholder</label>
+                <input type="text" id="admCustPlcAddress" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="admCustChkAddressRequired">
+                  <span><strong>Make Custom Delivery Address "REQUIRED"</strong></span>
+                </label>
+              </div>
+              <div class="form-group">
+                <label>Branding / Notes Label</label>
+                <input type="text" id="admCustLblNotes" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Submit Button Text</label>
+                <input type="text" id="admCustBtnSubmit" class="form-input">
+              </div>
+            </div>
+
+            <h4 style="color:var(--gold-light); margin: 24px 0 10px;">Custom Box Structure Options</h4>
+            <div style="display:flex; gap:10px; margin-bottom: 14px;">
+              <input type="text" id="newCustomOptionInput" class="form-input" placeholder="Type custom box type..." style="flex:1;">
+              <button type="button" class="btn btn-gold" id="addCustomOptionBtn">+ Add Custom Type</button>
+            </div>
+            <div class="admin-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Custom Structure Option</th>
+                    <th style="width: 100px;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="customOptionsTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 6: PRODUCT INVENTORY -->
+          <div class="admin-tab-content" id="tab-products">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <h3 style="color:var(--gold-light);">Product Catalogue Inventory</h3>
+              <button class="btn btn-gold" id="addNewProdBtn">+ Add New Box</button>
+            </div>
+            <div class="admin-table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Photo</th>
+                    <th>SKU</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Price (₹)</th>
+                    <th>MOQ</th>
+                    <th>Lining</th>
+                    <th>Lock Type</th>
+                    <th>Capacity</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="adminProductTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 7: BRANDING & LOGO -->
+          <div class="admin-tab-content" id="tab-branding">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">Brand & Header Settings</h3>
+            <div class="admin-form-grid">
+              <div class="form-group">
+                <label>Company / Brand Name</label>
+                <input type="text" id="admBrandName" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Brand Tagline</label>
+                <input type="text" id="admBrandTagline" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Nav Admin Button Label</label>
+                <input type="text" id="admNavAdminText" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Nav WhatsApp Button Label</label>
+                <input type="text" id="admNavWhatsappText" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Favicon URL or SVG Data URL</label>
+                <input type="text" id="admFaviconUrl" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Logo File / Image</label>
+                <div style="display: flex; gap: 12px; align-items: center; margin-top: 6px;">
+                  <img id="admLogoPreview" src="Logo_taj_enterprises.jpg" style="height: 50px; width: auto; background: #000; padding: 4px; border: 1px solid var(--border-gold); border-radius: 4px;">
+                  <input type="file" id="admLogoUpload" accept="image/*" style="display:none;" onchange="handleLogoChange(event)">
+                  <button type="button" class="btn btn-outline" onclick="document.getElementById('admLogoUpload').click()">Upload Logo Image</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 8: HERO BANNER -->
+          <div class="admin-tab-content" id="tab-hero">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">Hero Banner Content</h3>
+            <div class="admin-form-grid">
+              <div class="form-group admin-full-col">
+                <label>Top Badge Text</label>
+                <input type="text" id="admHeroBadge" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Hero Headline (Supports &lt;span&gt; for gold text)</label>
+                <input type="text" id="admHeroTitle" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Hero Description</label>
+                <textarea id="admHeroDesc" class="form-textarea" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Button 1 Text</label>
+                <input type="text" id="admHeroBtn1" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Button 2 Text</label>
+                <input type="text" id="admHeroBtn2" class="form-input">
+              </div>
+              <div class="form-group admin-full-col">
+                <label>Hero Featured Box Photo</label>
+                <div style="display: flex; gap: 12px; align-items: center; margin-top: 6px;">
+                  <img id="admHeroCardImgPrev" src="" style="width: 80px; height: 80px; object-fit: contain; background: #000; border: 1px solid var(--border-gold); border-radius: 4px;">
+                  <input type="file" id="admHeroCardImgUpload" accept="image/*" style="display:none;" onchange="handleHeroImgChange(event)">
+                  <button type="button" class="btn btn-outline" onclick="document.getElementById('admHeroCardImgUpload').click()">Change Hero Image</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Featured Box SKU</label>
+                <input type="text" id="admHeroCardSku" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Featured Box Tag</label>
+                <input type="text" id="admHeroCardTag" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Featured Box Title</label>
+                <input type="text" id="admHeroCardTitle" class="form-input">
+              </div>
+              <div class="form-group">
+                <label>Featured Box Subtitle</label>
+                <input type="text" id="admHeroCardSub" class="form-input">
+              </div>
+              <div class="form-group"><label>Tag Pill 1</label><input type="text" id="admHeroCardPill1" class="form-input"></div>
+              <div class="form-group"><label>Tag Pill 2</label><input type="text" id="admHeroCardPill2" class="form-input"></div>
+              <div class="form-group"><label>Tag Pill 3</label><input type="text" id="admHeroCardPill3" class="form-input"></div>
+            </div>
+          </div>
+
+          <!-- TAB 9: STATS & CRAFT -->
+          <div class="admin-tab-content" id="tab-stats">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">Live Statistics Bar</h3>
+            <div class="admin-form-grid">
+              <div class="form-group"><label>Stat 1 Value</label><input type="text" id="admStat1Val" class="form-input"></div>
+              <div class="form-group"><label>Stat 1 Label</label><input type="text" id="admStat1Lbl" class="form-input"></div>
+              <div class="form-group"><label>Stat 2 Value</label><input type="text" id="admStat2Val" class="form-input"></div>
+              <div class="form-group"><label>Stat 2 Label</label><input type="text" id="admStat2Lbl" class="form-input"></div>
+              <div class="form-group"><label>Stat 3 Value</label><input type="text" id="admStat3Val" class="form-input"></div>
+              <div class="form-group"><label>Stat 3 Label</label><input type="text" id="admStat3Lbl" class="form-input"></div>
+              <div class="form-group"><label>Stat 4 Value</label><input type="text" id="admStat4Val" class="form-input"></div>
+              <div class="form-group"><label>Stat 4 Label</label><input type="text" id="admStat4Lbl" class="form-input"></div>
+            </div>
+
+            <h3 style="color:var(--gold-light); margin: 26px 0 16px;">Craftsmanship Feature Cards</h3>
+            <div class="admin-form-grid">
+              <div class="form-group"><label>Section Subtitle</label><input type="text" id="admAboutSub" class="form-input"></div>
+              <div class="form-group"><label>Section Title</label><input type="text" id="admAboutTitle" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Section Description</label><textarea id="admAboutDesc" class="form-textarea" rows="2"></textarea></div>
+              <div class="form-group"><label>Feature 1 Title</label><input type="text" id="admFeat1Title" class="form-input"></div>
+              <div class="form-group"><label>Feature 1 Description</label><input type="text" id="admFeat1Desc" class="form-input"></div>
+              <div class="form-group"><label>Feature 2 Title</label><input type="text" id="admFeat2Title" class="form-input"></div>
+              <div class="form-group"><label>Feature 2 Description</label><input type="text" id="admFeat2Desc" class="form-input"></div>
+              <div class="form-group"><label>Feature 3 Title</label><input type="text" id="admFeat3Title" class="form-input"></div>
+              <div class="form-group"><label>Feature 3 Description</label><input type="text" id="admFeat3Desc" class="form-input"></div>
+            </div>
+          </div>
+
+          <!-- TAB 10: B2B -->
+          <div class="admin-tab-content" id="tab-b2b">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">B2B Wholesale Content</h3>
+            <div class="admin-form-grid">
+              <div class="form-group"><label>Section Subtitle</label><input type="text" id="admB2bSub" class="form-input"></div>
+              <div class="form-group"><label>Section Heading</label><input type="text" id="admB2bTitle" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Section Description</label><textarea id="admB2bDesc" class="form-textarea" rows="2"></textarea></div>
+              <div class="form-group admin-full-col"><label>Checklist Point 1</label><input type="text" id="admB2bCheck1" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Checklist Point 2</label><input type="text" id="admB2bCheck2" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Checklist Point 3</label><input type="text" id="admB2bCheck3" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Checklist Point 4</label><input type="text" id="admB2bCheck4" class="form-input"></div>
+            </div>
+          </div>
+
+          <!-- TAB 11: CONTACT & FOOTER -->
+          <div class="admin-tab-content" id="tab-contact">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">Contact & Footer Details</h3>
+            <div class="admin-form-grid">
+              <div class="form-group"><label>WhatsApp / Phone Number</label><input type="text" id="admPhone" class="form-input"></div>
+              <div class="form-group"><label>Official Email Address</label><input type="email" id="admEmail" class="form-input"></div>
+              <div class="form-group"><label>Factory / Office Location</label><input type="text" id="admAddress" class="form-input"></div>
+              <div class="form-group"><label>Working Hours</label><input type="text" id="admHours" class="form-input"></div>
+              <div class="form-group admin-full-col"><label>Footer About Text</label><textarea id="admFooterAbout" class="form-textarea" rows="2"></textarea></div>
+              <div class="form-group"><label>Copyright Line</label><input type="text" id="admFooterCopy" class="form-input"></div>
+              <div class="form-group"><label>Sub-Copyright Note</label><input type="text" id="admFooterSubCopy" class="form-input"></div>
+            </div>
+          </div>
+
+          <!-- TAB 12: SECURITY -->
+          <div class="admin-tab-content" id="tab-security">
+            <h3 style="color:var(--gold-light); margin-bottom: 16px;">Admin Access Control</h3>
+            <div class="admin-form-grid" style="max-width: 400px;">
+              <div class="form-group admin-full-col">
+                <label>Current Admin PIN</label>
+                <input type="text" id="admPinCode" class="form-input" style="font-size: 1.1rem; letter-spacing: 2px;">
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">Update this PIN to protect your console from unauthorized edits.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FOOTER ACTION BAR -->
+      <div class="admin-footer-bar">
+        <button class="btn btn-gold" id="saveAllBtn">Save & Apply Changes</button>
+        <button class="btn btn-outline" id="exportFullHtmlBtn" style="border-color: var(--accent-green); color: var(--accent-green);">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Updated HTML File
+        </button>
+        <button class="btn btn-danger" id="resetDefaultsBtn" style="margin-left: auto;">Reset to Initial Factory Data</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toastMessage">Website Updated Successfully</div>
+
+  <!-- COMPLETE SITE LOGIC & CMS SCRIPT -->
+  <script>
+    // AVAILABLE MASTER GOOGLE FONTS SUITE
+    const AVAILABLE_FONTS = [
+      "Cinzel",
+      "Playfair Display",
+      "Cormorant Garamond",
+      "Bodoni Moda",
+      "Lora",
+      "Plus Jakarta Sans",
+      "Inter",
+      "Montserrat",
+      "Poppins",
+      "Outfit",
+      "Great Vibes",
+      "Alex Brush"
+    ];
+
+    // COMPLETE SITE CONFIGURATION DATA STRUCTURE
+    const DEFAULT_CONFIG = {
+      pin: "1234",
+      fonts: {
+        brandName: "Cinzel",
+        brandTagline: "Plus Jakarta Sans",
+        navLinks: "Plus Jakarta Sans",
+        navButtons: "Plus Jakarta Sans",
+        heroBadge: "Plus Jakarta Sans",
+        heroTitle: "Cinzel",
+        heroDesc: "Plus Jakarta Sans",
+        heroButtons: "Plus Jakarta Sans",
+        heroCardTitle: "Cinzel",
+        statNumbers: "Cinzel",
+        statLabels: "Plus Jakarta Sans",
+        sectionHeadings: "Cinzel",
+        sectionSubtitles: "Plus Jakarta Sans",
+        featureCardTitles: "Cinzel",
+        featureCardDesc: "Plus Jakarta Sans",
+        catFilterPills: "Plus Jakarta Sans",
+        productTitles: "Cinzel",
+        productPrices: "Plus Jakarta Sans",
+        productSpecs: "Plus Jakarta Sans",
+        b2bTitle: "Cinzel",
+        b2bChecklist: "Plus Jakarta Sans",
+        inquiryTitles: "Cinzel",
+        inquiryLabels: "Plus Jakarta Sans",
+        inquirySubmitBtn: "Plus Jakarta Sans",
+        footerTitles: "Cinzel",
+        footerText: "Plus Jakarta Sans"
+      },
+      categories: ["Double Rod", "Single Rod", "Display Tower", "Briefcase"],
+      colors: [
+        "Royal Navy Blue Floral Zari",
+        "Crimson Red Bridal Vine Zari",
+        "Fuchsia Pink Brocade",
+        "Sky Blue Blossom",
+        "Lavender Wave Weave",
+        "Metallic Champagne Gold",
+        "Pearl White & Golden Chevron",
+        "Custom Bespoke Color Swatch"
+      ],
+      inquiryOptions: [
+        "Double Rod Zari Boxes",
+        "Single Rod Compact Cases",
+        "Standing Display Towers",
+        "Multi-Rod Vanity Briefcases"
+      ],
+      customInquiryOptions: [
+        "Custom Bridal Chuda Trunk (Bespoke Sizing)",
+        "Custom Velvet Jewelry Tray with Acrylic Lid",
+        "Laser-Branded Showroom Gift Packaging",
+        "Custom 3-Rod / 4-Rod Heavy Travel Case",
+        "Special Dimension Zari Box"
+      ],
+      inquiry: {
+        title: "Standard Wholesale Quotation",
+        desc: "Select regular catalog models, preferred box colors, and volume requirements.",
+        lblName: "Full Name / Business Name",
+        plcName: "e.g. Royal Jewelers",
+        lblModel: "Select Preferred Model",
+        lblColor: "Select Box Color",
+        lblQty: "Estimated Quantity (Pieces)",
+        plcQty: "e.g. 50",
+        lblAddress: "Delivery Address / City",
+        plcAddress: "e.g. Shop 12, Zaveri Bazaar, Mumbai",
+        addressRequired: true,
+        btnSubmit: "Send Wholesale Inquiry via WhatsApp"
+      },
+      customInquiry: {
+        title: "Custom Box Manufacturing",
+        desc: "Bespoke dimensions, custom fabric weaving, and branding (Production Limit: Max 800 Units).",
+        lblName: "Full Name / Brand Name",
+        lblModel: "Custom Box Type / Structure",
+        lblColor: "Custom Fabric / Brocade Color",
+        maxLimit: 800,
+        lblQty: "Order Quantity (Max Limit 800)",
+        plcQty: "Enter quantity (1 to 800)",
+        lblAddress: "Delivery Address / Destination",
+        plcAddress: "e.g. Commercial Hub, Karol Bagh, New Delhi",
+        addressRequired: true,
+        lblNotes: "Custom Specifications & Branding Notes",
+        btnSubmit: "Submit Custom Box Inquiry (Max 800) via WhatsApp"
+      },
+      branding: {
+        name: "Taj Enterprises",
+        tagline: "Handcrafted Luxury Storage",
+        logo: "Logo_taj_enterprises.jpg",
+        favicon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23000000' rx='100'/%3E%3Cdefs%3E%3ClinearGradient id='gold' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FDF4B8'/%3E%3Cstop offset='40%25' stop-color='%23D4AF37'/%3E%3Cstop offset='100%25' stop-color='%238F6E1C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M256,40 C256,40 248,72 230,104 C204,146 114,204 102,306 L124,306 C136,224 212,168 238,128 C248,110 256,76 256,76 C256,76 264,110 274,128 C300,168 376,224 388,306 L410,306 C398,204 308,146 282,104 C264,72 256,40 256,40 Z' fill='url(%23gold)'/%3E%3Ccircle cx='256' cy='36' r='6' fill='%23FDF4B8'/%3E%3Cpath d='M196,180 L210,138 L234,160 L256,132 L278,160 L302,138 L316,180 Z' fill='url(%23gold)'/%3E%3Cpolygon points='256,380 70,296 70,396 256,482' fill='%23705310' stroke='%23FDF4B8' stroke-width='2'/%3E%3Cpolygon points='256,380 442,296 442,396 256,482' fill='url(%23gold)' stroke='%23FDF4B8' stroke-width='2'/%3E%3Cpath d='M176,242 H336 V274 H276 V422 H236 V274 H176 Z' fill='url(%23gold)'/%3E%3Cpath d='M276,306 H326 V332 H276 Z M276,360 H326 V386 H276 Z' fill='url(%23gold)'/%3E%3C/svg%3E",
+        navAdminText: "Admin Console",
+        navWhatsappText: "WhatsApp Direct"
+      },
+      hero: {
+        badge: "Direct Factory Manufacturer • New Delhi",
+        title: "Exquisite Bridal <span>Bangle Boxes</span> & Luxury Vanity Cases",
+        desc: "Manufactured using authentic gold and silver ZARI woven brocade, rust-resistant solid hardware, and protective Chawal lining designed to preserve gold, kundan, and glass jewelry without tarnish.",
+        btn1: "Explore Collection",
+        btn2: "Wholesale & Custom Orders",
+        cardSku: "MODEL: TE-ZR-NV02",
+        cardTag: "Best Seller",
+        cardTitle: "Royal Navy Blue Floral Zari Box",
+        cardSub: "Reinforced dual-rod wooden chassis with clear acrylic display top.",
+        cardImg: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&auto=format&fit=crop&q=70",
+        cardPill1: "Protective Chawal Lining",
+        cardPill2: "40–50 Bangles",
+        cardPill3: "Vintage Brass Latch"
+      },
+      stats: {
+        s1Val: "15+", s1Lbl: "Years Handcrafting",
+        s2Val: "100%", s2Lbl: "Chawal Tarnish Protection",
+        s3Val: "50,000+", s3Lbl: "Boxes Dispatched",
+        s4Val: "Pan-India", s4Lbl: "Wholesale Delivery"
+      },
+      about: {
+        sub: "Unmatched Craftsmanship",
+        title: "Built with Traditional Artistry & Structural Integrity",
+        desc: "Every piece produced at Taj Enterprises combines the richness of traditional Banarasi and Zari textile art with modern, durable joinery tailored for bridal trousseaus and retail jewelers.",
+        f1Title: "Authentic Zari Weaves", f1Desc: "Hand-selected brocade fabrics featuring detailed floral vines, chevron patterns, and metallic thread embroidery that retain their sheen for years.",
+        f2Title: "Protective Chawal Lining", f2Desc: "Our signature inner rice-embossed cushion prevents oxidation and scratches, keeping delicate bridal gold, kundan, and stone work completely protected.",
+        f3Title: "Heavy-Duty Hardware", f3Desc: "Equipped with cast brass lock latches, ergonomic luggage-grade handles on vanity briefcases, and smooth acrylic viewing windows."
+      },
+      b2b: {
+        sub: "B2B & Bulk Solutions",
+        title: "Custom Manufacturing for Jewelers & Boutiques",
+        desc: "We supply custom-branded packaging and bulk quantities to leading bridal boutiques, jewelry showrooms, and event planners across India and worldwide.",
+        c1: "Custom Fabric Colors (Red, Maroon, Navy, Gold, Ivory, Pastels)",
+        c2: "Laser-engraved Brass Branding & Custom Logo Foiling",
+        c3: "Tailored Compartment & Rod Sizing for Heavy Chudas",
+        c4: "Fast bulk turnaround and transit-safe corrugated export packaging"
+      },
+      contact: {
+        phone: "+91 99530 68456",
+        email: "mdfaizansariofficial@gmail.com",
+        address: "New Delhi, India",
+        hours: "Mon - Sat: 9:30 AM - 7:30 PM",
+        footerAbout: "Premier Indian manufacturer of handcrafted bridal bangle boxes, jewelry vanity cases, and ceremonial packaging. Built with authentic Zari embroidery and Protective Chawal Lining.",
+        copyright: "© 2026 Taj Enterprises. All rights reserved. Handcrafted in India.",
+        subCopy: "Designed for Luxury Storage & Bridal Packaging"
+      },
+      products: [
+        {
+          id: "TE-ZR-NV02", sku: "TE-ZR-NV02", title: "Royal Navy Blue Floral Zari Box",
+          category: "Double Rod", price: "850", moq: "24 Pcs",
+          lining: "Protective Chawal Lining", lock: "Vintage Brass Latch", capacity: "40-50 Bangles",
+          img: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=60"
+        },
+        {
+          id: "TE-ZR-RD02", sku: "TE-ZR-RD02", title: "Crimson Red Bridal Vine Zari Box",
+          category: "Double Rod", price: "850", moq: "24 Pcs",
+          lining: "Protective Chawal Lining", lock: "Dual Gold Hook", capacity: "40-50 Bangles",
+          img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&auto=format&fit=crop&q=60"
+        },
+        {
+          id: "TE-ZR-BL01", sku: "TE-ZR-BL01", title: "Sky Blue Blossom Standing Tower",
+          category: "Display Tower", price: "690", moq: "36 Pcs",
+          lining: "Cushioned Chawal Velvet", lock: "Single Front Clasp", capacity: "Vertical Single Stack",
+          img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&auto=format&fit=crop&q=60"
+        },
+        {
+          id: "TE-ZR-PK03", sku: "TE-ZR-PK03", title: "Fuchsia Pink Zari Vanity Briefcase",
+          category: "Briefcase", price: "1,250", moq: "12 Pcs",
+          lining: "Protective Chawal Lining", lock: "Heavy Chrome Trunk Lock", capacity: "3-Rod Heavy Set",
+          img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&auto=format&fit=crop&q=60"
+        },
+        {
+          id: "TE-ZR-LV01", sku: "TE-ZR-LV01", title: "Lavender Wave Weave Single Box",
+          category: "Single Rod", price: "480", moq: "48 Pcs",
+          lining: "Protective Chawal Lining", lock: "Single Vintage Latch", capacity: "20-25 Bangles",
+          img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&auto=format&fit=crop&q=60"
+        },
+        {
+          id: "TE-ZR-GL01", sku: "TE-ZR-GL01", title: "Metallic Champagne Crocodile Box",
+          category: "Single Rod", price: "540", moq: "36 Pcs",
+          lining: "Soft Quilted Felt", lock: "Gold Turn Clasp", capacity: "20-25 Bangles",
+          img: "https://images.unsplash.com/photo-1611591475879-1123e4d1f274?w=500&auto=format&fit=crop&q=60"
+        }
+      ]
+    };
+
+    // SITE STATE INITIALIZATION
+    let siteConfig = JSON.parse(localStorage.getItem('taj_master_config_v4')) || DEFAULT_CONFIG;
+    if (!siteConfig.fonts) siteConfig.fonts = { ...DEFAULT_CONFIG.fonts };
+    let currentFilter = 'all';
+
+    // SWITCH BETWEEN STANDARD AND CUSTOM FORMS
+    window.switchInquiryForm = function(mode) {
+      const btnStd = document.getElementById('tabBtnStandard');
+      const btnCust = document.getElementById('tabBtnCustom');
+      const fStd = document.getElementById('formWrapperStandard');
+      const fCust = document.getElementById('formWrapperCustom');
+
+      if (mode === 'standard') {
+        btnStd.classList.add('active');
+        btnCust.classList.remove('active');
+        fStd.classList.add('active');
+        fCust.classList.remove('active');
+      } else {
+        btnCust.classList.add('active');
+        btnStd.classList.remove('active');
+        fCust.classList.add('active');
+        fStd.classList.remove('active');
+      }
+    };
+
+    // APPLY DYNAMIC FONTS TO ENTIRE WEBSITE
+    function applyDynamicFonts() {
+      const f = siteConfig.fonts || DEFAULT_CONFIG.fonts;
+
+      // 1. Header & Navigation
+      document.getElementById('navBrandName').style.fontFamily = f.brandName;
+      document.getElementById('footerBrandName').style.fontFamily = f.brandName;
+      document.getElementById('footerCompanyName').style.fontFamily = f.brandName;
+      document.getElementById('navBrandTagline').style.fontFamily = f.brandTagline;
+      document.querySelectorAll('#navLinksList a').forEach(el => el.style.fontFamily = f.navLinks);
+      document.getElementById('openAdminBtn').style.fontFamily = f.navButtons;
+      document.getElementById('navWhatsappBtn').style.fontFamily = f.navButtons;
+
+      // 2. Hero Section
+      document.getElementById('heroBadge').style.fontFamily = f.heroBadge;
+      document.getElementById('heroTitle').style.fontFamily = f.heroTitle;
+      document.getElementById('heroDesc').style.fontFamily = f.heroDesc;
+      document.getElementById('heroBtn1').style.fontFamily = f.heroButtons;
+      document.getElementById('heroBtn2').style.fontFamily = f.heroButtons;
+      document.getElementById('heroCardTitle').style.fontFamily = f.heroCardTitle;
+
+      // 3. Stats Strip & Features
+      document.querySelectorAll('.stat-item h3').forEach(el => el.style.fontFamily = f.statNumbers);
+      document.querySelectorAll('.stat-item p').forEach(el => el.style.fontFamily = f.statLabels);
+      document.getElementById('aboutTitle').style.fontFamily = f.sectionHeadings;
+      document.getElementById('catTitle').style.fontFamily = f.sectionHeadings;
+      document.getElementById('b2bTitle').style.fontFamily = f.sectionHeadings;
+      document.getElementById('aboutSub').style.fontFamily = f.sectionSubtitles;
+      document.getElementById('catSub').style.fontFamily = f.sectionSubtitles;
+      document.getElementById('b2bSub').style.fontFamily = f.sectionSubtitles;
+      document.querySelectorAll('.feature-card h3').forEach(el => el.style.fontFamily = f.featureCardTitles);
+      document.querySelectorAll('.feature-card p').forEach(el => el.style.fontFamily = f.featureCardDesc);
+
+      // 4. Products
+      document.querySelectorAll('.product-title').forEach(el => el.style.fontFamily = f.productTitles);
+      document.querySelectorAll('.price-tag').forEach(el => el.style.fontFamily = f.productPrices);
+      document.querySelectorAll('.product-specs, .moq-tag').forEach(el => el.style.fontFamily = f.productSpecs);
+      document.querySelectorAll('.filter-btn').forEach(el => el.style.fontFamily = f.catFilterPills);
+
+      // 5. B2B & Inquiry
+      document.querySelectorAll('.b2b-checklist li span').forEach(el => el.style.fontFamily = f.b2bChecklist);
+      document.getElementById('inquiryFormTitle').style.fontFamily = f.inquiryTitles;
+      document.getElementById('customFormTitle').style.fontFamily = f.inquiryTitles;
+      document.querySelectorAll('.form-group label, .form-input, .form-select, .form-textarea, .form-note').forEach(el => el.style.fontFamily = f.inquiryLabels);
+      document.getElementById('btnQuoteSubmit').style.fontFamily = f.inquirySubmitBtn;
+      document.getElementById('btnCustomSubmit').style.fontFamily = f.inquirySubmitBtn;
+
+      // 6. Footer
+      document.querySelectorAll('.footer-col h4').forEach(el => el.style.fontFamily = f.footerTitles);
+      document.querySelectorAll('.footer-col p, .footer-links a, .footer-bottom p').forEach(el => el.style.fontFamily = f.footerText);
+    }
+
+    // RENDER THE FULL WEBSITE
+    function renderWebsite() {
+      // 1. Branding & Header
+      document.getElementById('navBrandName').textContent = siteConfig.branding.name;
+      document.getElementById('footerBrandName').textContent = siteConfig.branding.name;
+      document.getElementById('footerCompanyName').textContent = siteConfig.branding.name;
+      document.getElementById('navBrandTagline').textContent = siteConfig.branding.tagline;
+      document.getElementById('pageTitleTag').textContent = `${siteConfig.branding.name} | ${siteConfig.branding.tagline}`;
+      document.getElementById('navAdminBtnText').textContent = siteConfig.branding.navAdminText || "Admin Console";
+      document.getElementById('navWhatsappBtnText').textContent = siteConfig.branding.navWhatsappText || "WhatsApp Direct";
+
+      if (siteConfig.branding.favicon) {
+        document.getElementById('siteFavicon').href = siteConfig.branding.favicon;
+      }
+
+      const logoEl = document.getElementById('navLogoImg');
+      if (siteConfig.branding.logo) {
+        logoEl.src = siteConfig.branding.logo;
+        logoEl.style.display = 'block';
+      }
+
+      // 2. Hero Section
+      document.getElementById('heroBadge').textContent = siteConfig.hero.badge;
+      document.getElementById('heroTitle').innerHTML = siteConfig.hero.title;
+      document.getElementById('heroDesc').textContent = siteConfig.hero.desc;
+      document.getElementById('heroBtn1').textContent = siteConfig.hero.btn1;
+      document.getElementById('heroBtn2').textContent = siteConfig.hero.btn2;
+
+      document.getElementById('heroCardSku').textContent = siteConfig.hero.cardSku;
+      document.getElementById('heroCardTag').textContent = siteConfig.hero.cardTag;
+      document.getElementById('heroCardTitle').textContent = siteConfig.hero.cardTitle;
+      document.getElementById('heroCardSub').textContent = siteConfig.hero.cardSub;
+      document.getElementById('heroPreviewImg').src = siteConfig.hero.cardImg;
+      document.getElementById('heroCardPill1').textContent = siteConfig.hero.cardPill1;
+      document.getElementById('heroCardPill2').textContent = siteConfig.hero.cardPill2;
+      document.getElementById('heroCardPill3').textContent = siteConfig.hero.cardPill3;
+
+      // 3. Stats Strip
+      document.getElementById('stat1Val').textContent = siteConfig.stats.s1Val;
+      document.getElementById('stat1Lbl').textContent = siteConfig.stats.s1Lbl;
+      document.getElementById('stat2Val').textContent = siteConfig.stats.s2Val;
+      document.getElementById('stat2Lbl').textContent = siteConfig.stats.s2Lbl;
+      document.getElementById('stat3Val').textContent = siteConfig.stats.s3Val;
+      document.getElementById('stat3Lbl').textContent = siteConfig.stats.s3Lbl;
+      document.getElementById('stat4Val').textContent = siteConfig.stats.s4Val;
+      document.getElementById('stat4Lbl').textContent = siteConfig.stats.s4Lbl;
+
+      // 4. About & Craftsmanship
+      document.getElementById('aboutSub').textContent = siteConfig.about.sub;
+      document.getElementById('aboutTitle').textContent = siteConfig.about.title;
+      document.getElementById('aboutDesc').textContent = siteConfig.about.desc;
+      document.getElementById('feat1Title').textContent = siteConfig.about.f1Title;
+      document.getElementById('feat1Desc').textContent = siteConfig.about.f1Desc;
+      document.getElementById('feat2Title').textContent = siteConfig.about.f2Title;
+      document.getElementById('feat2Desc').textContent = siteConfig.about.f2Desc;
+      document.getElementById('feat3Title').textContent = siteConfig.about.f3Title;
+      document.getElementById('feat3Desc').textContent = siteConfig.about.f3Desc;
+
+      // 5. B2B & Checklist
+      document.getElementById('b2bSub').textContent = siteConfig.b2b.sub;
+      document.getElementById('b2bTitle').textContent = siteConfig.b2b.title;
+      document.getElementById('b2bDesc').textContent = siteConfig.b2b.desc;
+      document.getElementById('b2bCheck1').textContent = siteConfig.b2b.c1;
+      document.getElementById('b2bCheck2').textContent = siteConfig.b2b.c2;
+      document.getElementById('b2bCheck3').textContent = siteConfig.b2b.c3;
+      document.getElementById('b2bCheck4').textContent = siteConfig.b2b.c4;
+
+      // 6. STANDARD INQUIRY FORM
+      document.getElementById('inquiryFormTitle').textContent = siteConfig.inquiry.title;
+      document.getElementById('inquiryFormDesc').textContent = siteConfig.inquiry.desc;
+      document.getElementById('lblQuoteName').innerHTML = `${siteConfig.inquiry.lblName} <span class="req-indicator">*</span>`;
+      document.getElementById('quoteName').placeholder = siteConfig.inquiry.plcName;
+      document.getElementById('lblQuoteModel').innerHTML = `${siteConfig.inquiry.lblModel} <span class="req-indicator">*</span>`;
+      document.getElementById('lblQuoteColor').innerHTML = `${siteConfig.inquiry.lblColor} <span class="req-indicator">*</span>`;
+      document.getElementById('lblQuoteQty').innerHTML = `${siteConfig.inquiry.lblQty} <span class="req-indicator">*</span>`;
+      document.getElementById('quoteQty').placeholder = siteConfig.inquiry.plcQty;
+      document.getElementById('btnQuoteSubmit').textContent = siteConfig.inquiry.btnSubmit;
+
+      // Populate Standard Model Dropdown
+      const stdModelSelect = document.getElementById('quoteModelDropdown');
+      stdModelSelect.innerHTML = '';
+      siteConfig.inquiryOptions.forEach(opt => {
+        const optionEl = document.createElement('option');
+        optionEl.value = opt;
+        optionEl.textContent = opt;
+        stdModelSelect.appendChild(optionEl);
+      });
+
+      // Populate Standard Color Dropdown
+      const stdColorSelect = document.getElementById('quoteColorDropdown');
+      stdColorSelect.innerHTML = '';
+      siteConfig.colors.forEach(col => {
+        const optionEl = document.createElement('option');
+        optionEl.value = col;
+        optionEl.textContent = col;
+        stdColorSelect.appendChild(optionEl);
+      });
+
+      // Address Required Condition & Placeholder
+      const stdAddrInput = document.getElementById('quoteAddress');
+      stdAddrInput.placeholder = siteConfig.inquiry.plcAddress;
+      document.getElementById('lblQuoteAddress').innerHTML = `${siteConfig.inquiry.lblAddress} <span id="reqBadgeStdAddress" class="req-indicator">${siteConfig.inquiry.addressRequired ? '*' : '(Optional)'}</span>`;
+      if (siteConfig.inquiry.addressRequired) {
+        stdAddrInput.setAttribute('required', 'required');
+      } else {
+        stdAddrInput.removeAttribute('required');
+      }
+
+      // 7. CUSTOM BOX INQUIRY FORM (MAX 800 UNITS)
+      document.getElementById('customFormTitle').textContent = siteConfig.customInquiry.title;
+      document.getElementById('customFormDesc').textContent = siteConfig.customInquiry.desc;
+      document.getElementById('lblCustomName').innerHTML = `${siteConfig.customInquiry.lblName} <span class="req-indicator">*</span>`;
+      document.getElementById('lblCustomModel').innerHTML = `${siteConfig.customInquiry.lblModel} <span class="req-indicator">*</span>`;
+      document.getElementById('lblCustomColor').innerHTML = `${siteConfig.customInquiry.lblColor} <span class="req-indicator">*</span>`;
+      document.getElementById('lblCustomQty').innerHTML = `${siteConfig.customInquiry.lblQty} <span class="req-indicator">*</span>`;
+      
+      const customQtyInput = document.getElementById('customQty');
+      const maxUnits = parseInt(siteConfig.customInquiry.maxLimit) || 800;
+      customQtyInput.max = maxUnits;
+      customQtyInput.placeholder = siteConfig.customInquiry.plcQty;
+      document.getElementById('customLimitNote').innerHTML = `
+        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        <span>Strict production capacity: Maximum ${maxUnits} pieces per bespoke custom run.</span>
+      `;
+
+      // Populate Custom Model Dropdown
+      const custModelSelect = document.getElementById('customModelDropdown');
+      custModelSelect.innerHTML = '';
+      siteConfig.customInquiryOptions.forEach(opt => {
+        const optionEl = document.createElement('option');
+        optionEl.value = opt;
+        optionEl.textContent = opt;
+        custModelSelect.appendChild(optionEl);
+      });
+
+      // Populate Custom Color Dropdown
+      const custColorSelect = document.getElementById('customColorDropdown');
+      custColorSelect.innerHTML = '';
+      siteConfig.colors.forEach(col => {
+        const optionEl = document.createElement('option');
+        optionEl.value = col;
+        optionEl.textContent = col;
+        custColorSelect.appendChild(optionEl);
+      });
+
+      // Custom Address Required Condition & Placeholder
+      const custAddrInput = document.getElementById('customAddress');
+      custAddrInput.placeholder = siteConfig.customInquiry.plcAddress;
+      document.getElementById('lblCustomAddress').innerHTML = `${siteConfig.customInquiry.lblAddress} <span id="reqBadgeCustAddress" class="req-indicator">${siteConfig.customInquiry.addressRequired ? '*' : '(Optional)'}</span>`;
+      if (siteConfig.customInquiry.addressRequired) {
+        custAddrInput.setAttribute('required', 'required');
+      } else {
+        custAddrInput.removeAttribute('required');
+      }
+
+      document.getElementById('lblCustomNotes').textContent = siteConfig.customInquiry.lblNotes;
+      document.getElementById('btnCustomSubmit').textContent = siteConfig.customInquiry.btnSubmit;
+
+      // 8. Contact & Footer
+      const cleanPhone = siteConfig.contact.phone.replace(/[^0-9]/g, '');
+      document.getElementById('navWhatsappBtn').href = `https://wa.me/${cleanPhone}`;
+      document.getElementById('footerPhone').textContent = siteConfig.contact.phone;
+      document.getElementById('footerEmail').textContent = siteConfig.contact.email;
+      document.getElementById('footerAddress').textContent = siteConfig.contact.address;
+      document.getElementById('footerHours').textContent = siteConfig.contact.hours;
+      document.getElementById('footerAboutText').textContent = siteConfig.contact.footerAbout;
+      document.getElementById('footerCopyText').textContent = siteConfig.contact.copyright;
+      document.getElementById('footerSubCopy').textContent = siteConfig.contact.subCopy || "Designed for Luxury Storage & Bridal Packaging";
+
+      // Render Dynamic Category Pills & Footer Links
+      renderDynamicCategoryPills();
+      renderFooterCategories();
+
+      // Render Catalogue Grid
+      renderCatalogue();
+
+      // Apply Individual Fonts Across Everything
+      applyDynamicFonts();
+    }
+
+    // RENDER DYNAMIC CATEGORY PILLS IN CATALOGUE
+    function renderDynamicCategoryPills() {
+      const container = document.getElementById('dynamicFilterPills');
+      container.innerHTML = '';
+
+      const allBtn = document.createElement('button');
+      allBtn.className = `filter-btn ${currentFilter === 'all' ? 'active' : ''}`;
+      allBtn.setAttribute('data-filter', 'all');
+      allBtn.textContent = 'All Models';
+      container.appendChild(allBtn);
+
+      siteConfig.categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = `filter-btn ${currentFilter === cat ? 'active' : ''}`;
+        btn.setAttribute('data-filter', cat);
+        btn.textContent = cat;
+        container.appendChild(btn);
+      });
+    }
+
+    // RENDER FOOTER CATEGORIES
+    function renderFooterCategories() {
+      const footerUl = document.getElementById('footerCategoryLinks');
+      footerUl.innerHTML = '';
+      siteConfig.categories.forEach(cat => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#catalogue" onclick="filterByCategory('${cat}')">${cat}</a>`;
+        footerUl.appendChild(li);
+      });
+    }
+
+    window.filterByCategory = function(catName) {
+      currentFilter = catName;
+      renderDynamicCategoryPills();
+      renderCatalogue();
+    };
+
+    // RENDER PRODUCTS GRID
+    function renderCatalogue() {
+      const grid = document.getElementById('productsGrid');
+      const query = (document.getElementById('searchInput').value || '').toLowerCase();
+      grid.innerHTML = '';
+
+      const items = siteConfig.products.filter(item => {
+        const matchesCategory = currentFilter === 'all' || item.category === currentFilter;
+        const matchesQuery = item.title.toLowerCase().includes(query) || 
+                             item.sku.toLowerCase().includes(query) ||
+                             item.category.toLowerCase().includes(query);
+        return matchesCategory && matchesQuery;
+      });
+
+      if (items.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);"><h3>No matching models found.</h3></div>`;
+        return;
+      }
+
+      const cleanPhone = siteConfig.contact.phone.replace(/[^0-9]/g, '');
+
+      items.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <div class="product-img-wrapper">
+            <span class="prod-sku-tag">${prod.sku}</span>
+            <span class="prod-cat-tag">${prod.category}</span>
+            <img src="${prod.img}" alt="${prod.title}" onerror="this.src='https://placehold.co/400x300/10121a/d4af37?text=Box+Image';">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-title">${prod.title}</h3>
+            <div class="product-pricing">
+              <span class="price-tag">₹${prod.price}</span>
+              <span class="moq-tag">MOQ: ${prod.moq}</span>
+            </div>
+            <ul class="product-specs">
+              <li><span>Lining:</span> <span>${prod.lining}</span></li>
+              <li><span>Lock Mechanism:</span> <span>${prod.lock}</span></li>
+              <li><span>Capacity:</span> <span>${prod.capacity}</span></li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hello ' + siteConfig.branding.name + ', I would like wholesale details for: ' + prod.title + ' (' + prod.sku + ')')}" target="_blank" class="btn btn-gold" style="width: 100%;">
+                Inquire on WhatsApp
+              </a>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+      applyDynamicFonts();
+    }
+
+    // POPULATE ALL ADMIN INPUTS ACROSS ALL TABS
+    function populateAdminInputs() {
+      // 1. Typography Pickers
+      populateAllFontPickers();
+
+      // 2. Colors Table
+      renderAdminColorsTable();
+
+      // 3. Categories Table
+      renderAdminCategoriesTable();
+
+      // 4. Standard Inquiry Settings
+      document.getElementById('admInqTitle').value = siteConfig.inquiry.title;
+      document.getElementById('admInqDesc').value = siteConfig.inquiry.desc;
+      document.getElementById('admLblName').value = siteConfig.inquiry.lblName;
+      document.getElementById('admPlcName').value = siteConfig.inquiry.plcName;
+      document.getElementById('admLblModel').value = siteConfig.inquiry.lblModel;
+      document.getElementById('admLblColor').value = siteConfig.inquiry.lblColor;
+      document.getElementById('admLblQty').value = siteConfig.inquiry.lblQty;
+      document.getElementById('admPlcQty').value = siteConfig.inquiry.plcQty;
+      document.getElementById('admLblAddress').value = siteConfig.inquiry.lblAddress;
+      document.getElementById('admPlcAddress').value = siteConfig.inquiry.plcAddress;
+      document.getElementById('admChkAddressRequired').checked = !!siteConfig.inquiry.addressRequired;
+      document.getElementById('admBtnSubmit').value = siteConfig.inquiry.btnSubmit;
+      renderAdminInquiryOptionsTable();
+
+      // 5. Custom Box Inquiry Settings (Max 800)
+      document.getElementById('admCustTitle').value = siteConfig.customInquiry.title;
+      document.getElementById('admCustDesc').value = siteConfig.customInquiry.desc;
+      document.getElementById('admCustLblName').value = siteConfig.customInquiry.lblName;
+      document.getElementById('admCustLblModel').value = siteConfig.customInquiry.lblModel;
+      document.getElementById('admCustLblColor').value = siteConfig.customInquiry.lblColor;
+      document.getElementById('admCustMaxLimit').value = siteConfig.customInquiry.maxLimit || 800;
+      document.getElementById('admCustLblQty').value = siteConfig.customInquiry.lblQty;
+      document.getElementById('admCustPlcQty').value = siteConfig.customInquiry.plcQty;
+      document.getElementById('admCustLblAddress').value = siteConfig.customInquiry.lblAddress;
+      document.getElementById('admCustPlcAddress').value = siteConfig.customInquiry.plcAddress;
+      document.getElementById('admCustChkAddressRequired').checked = !!siteConfig.customInquiry.addressRequired;
+      document.getElementById('admCustLblNotes').value = siteConfig.customInquiry.lblNotes;
+      document.getElementById('admCustBtnSubmit').value = siteConfig.customInquiry.btnSubmit;
+      renderAdminCustomOptionsTable();
+
+      // 6. Branding
+      document.getElementById('admBrandName').value = siteConfig.branding.name;
+      document.getElementById('admBrandTagline').value = siteConfig.branding.tagline;
+      document.getElementById('admNavAdminText').value = siteConfig.branding.navAdminText || "Admin Console";
+      document.getElementById('admNavWhatsappText').value = siteConfig.branding.navWhatsappText || "WhatsApp Direct";
+      document.getElementById('admFaviconUrl').value = siteConfig.branding.favicon || "";
+      document.getElementById('admLogoPreview').src = siteConfig.branding.logo;
+
+      // 7. Hero
+      document.getElementById('admHeroBadge').value = siteConfig.hero.badge;
+      document.getElementById('admHeroTitle').value = siteConfig.hero.title;
+      document.getElementById('admHeroDesc').value = siteConfig.hero.desc;
+      document.getElementById('admHeroBtn1').value = siteConfig.hero.btn1;
+      document.getElementById('admHeroBtn2').value = siteConfig.hero.btn2;
+      document.getElementById('admHeroCardImgPrev').src = siteConfig.hero.cardImg;
+      document.getElementById('admHeroCardSku').value = siteConfig.hero.cardSku;
+      document.getElementById('admHeroCardTag').value = siteConfig.hero.cardTag;
+      document.getElementById('admHeroCardTitle').value = siteConfig.hero.cardTitle;
+      document.getElementById('admHeroCardSub').value = siteConfig.hero.cardSub;
+      document.getElementById('admHeroCardPill1').value = siteConfig.hero.cardPill1;
+      document.getElementById('admHeroCardPill2').value = siteConfig.hero.cardPill2;
+      document.getElementById('admHeroCardPill3').value = siteConfig.hero.cardPill3;
+
+      // 8. Stats
+      document.getElementById('admStat1Val').value = siteConfig.stats.s1Val;
+      document.getElementById('admStat1Lbl').value = siteConfig.stats.s1Lbl;
+      document.getElementById('admStat2Val').value = siteConfig.stats.s2Val;
+      document.getElementById('admStat2Lbl').value = siteConfig.stats.s2Lbl;
+      document.getElementById('admStat3Val').value = siteConfig.stats.s3Val;
+      document.getElementById('admStat3Lbl').value = siteConfig.stats.s3Lbl;
+      document.getElementById('admStat4Val').value = siteConfig.stats.s4Val;
+      document.getElementById('admStat4Lbl').value = siteConfig.stats.s4Lbl;
+
+      // 9. About
+      document.getElementById('admAboutSub').value = siteConfig.about.sub;
+      document.getElementById('admAboutTitle').value = siteConfig.about.title;
+      document.getElementById('admAboutDesc').value = siteConfig.about.desc;
+      document.getElementById('admFeat1Title').value = siteConfig.about.f1Title;
+      document.getElementById('admFeat1Desc').value = siteConfig.about.f1Desc;
+      document.getElementById('admFeat2Title').value = siteConfig.about.f2Title;
+      document.getElementById('admFeat2Desc').value = siteConfig.about.f2Desc;
+      document.getElementById('admFeat3Title').value = siteConfig.about.f3Title;
+      document.getElementById('admFeat3Desc').value = siteConfig.about.f3Desc;
+
+      // 10. B2B
+      document.getElementById('admB2bSub').value = siteConfig.b2b.sub;
+      document.getElementById('admB2bTitle').value = siteConfig.b2b.title;
+      document.getElementById('admB2bDesc').value = siteConfig.b2b.desc;
+      document.getElementById('admB2bCheck1').value = siteConfig.b2b.c1;
+      document.getElementById('admB2bCheck2').value = siteConfig.b2b.c2;
+      document.getElementById('admB2bCheck3').value = siteConfig.b2b.c3;
+      document.getElementById('admB2bCheck4').value = siteConfig.b2b.c4;
+
+      // 11. Contact & PIN
+      document.getElementById('admPhone').value = siteConfig.contact.phone;
+      document.getElementById('admEmail').value = siteConfig.contact.email;
+      document.getElementById('admAddress').value = siteConfig.contact.address;
+      document.getElementById('admHours').value = siteConfig.contact.hours;
+      document.getElementById('admFooterAbout').value = siteConfig.contact.footerAbout;
+      document.getElementById('admFooterCopy').value = siteConfig.contact.copyright;
+      document.getElementById('admFooterSubCopy').value = siteConfig.contact.subCopy || "";
+      document.getElementById('admPinCode').value = siteConfig.pin;
+
+      // 12. Products Table
+      renderAdminProductRows();
+    }
+
+    // HELPER: POPULATE FONT PICKERS
+    function populateAllFontPickers() {
+      const f = siteConfig.fonts || DEFAULT_CONFIG.fonts;
+      document.querySelectorAll('.font-picker').forEach(selectEl => {
+        const key = selectEl.id.replace('font_', '');
+        selectEl.innerHTML = '';
+        AVAILABLE_FONTS.forEach(fontName => {
+          const opt = document.createElement('option');
+          opt.value = fontName;
+          opt.textContent = fontName;
+          if (f[key] === fontName) opt.selected = true;
+          selectEl.appendChild(opt);
+        });
+      });
+    }
+
+    // 1. BOX COLORS MANAGER FUNCTIONS
+    function renderAdminColorsTable() {
+      const tbody = document.getElementById('colorsTableBody');
+      tbody.innerHTML = '';
+      siteConfig.colors.forEach((col, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><input type="text" value="${col}" onchange="updateColorName(${index}, this.value)"></td>
+          <td><button class="btn btn-danger" style="padding:4px 8px; font-size:0.72rem;" onclick="deleteColor(${index})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    window.updateColorName = function(idx, val) {
+      if (val.trim()) {
+        siteConfig.colors[idx] = val.trim();
+        showToast("Color updated");
+      }
+    };
+
+    window.deleteColor = function(idx) {
+      if (siteConfig.colors.length <= 1) {
+        alert("You must keep at least one box color option.");
+        return;
+      }
+      if (confirm(`Remove color option "${siteConfig.colors[idx]}"?`)) {
+        siteConfig.colors.splice(idx, 1);
+        renderAdminColorsTable();
+        showToast("Color removed");
+      }
+    };
+
+    document.getElementById('addColorBtn').addEventListener('click', () => {
+      const input = document.getElementById('newColorInput');
+      const val = input.value.trim();
+      if (val) {
+        siteConfig.colors.push(val);
+        input.value = '';
+        renderAdminColorsTable();
+        showToast(`Added color: ${val}`);
+      }
+    });
+
+    // 2. CATEGORY MANAGER FUNCTIONS
+    function renderAdminCategoriesTable() {
+      const tbody = document.getElementById('categoryTableBody');
+      tbody.innerHTML = '';
+      siteConfig.categories.forEach((cat, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><input type="text" value="${cat}" onchange="updateCategoryName(${index}, this.value)"></td>
+          <td><button class="btn btn-danger" style="padding:4px 8px; font-size:0.72rem;" onclick="deleteCategory(${index})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    window.updateCategoryName = function(idx, val) {
+      if (val.trim()) {
+        const oldName = siteConfig.categories[idx];
+        siteConfig.categories[idx] = val.trim();
+        siteConfig.products.forEach(p => {
+          if (p.category === oldName) p.category = val.trim();
+        });
+        renderAdminProductRows();
+        showToast("Category renamed");
+      }
+    };
+
+    window.deleteCategory = function(idx) {
+      if (siteConfig.categories.length <= 1) {
+        alert("You must keep at least one category.");
+        return;
+      }
+      if (confirm(`Delete category "${siteConfig.categories[idx]}"?`)) {
+        siteConfig.categories.splice(idx, 1);
+        renderAdminCategoriesTable();
+        renderAdminProductRows();
+        showToast("Category removed");
+      }
+    };
+
+    document.getElementById('addCategoryBtn').addEventListener('click', () => {
+      const input = document.getElementById('newCategoryInput');
+      const val = input.value.trim();
+      if (val) {
+        if (!siteConfig.categories.includes(val)) {
+          siteConfig.categories.push(val);
+          input.value = '';
+          renderAdminCategoriesTable();
+          renderAdminProductRows();
+          showToast(`Added category: ${val}`);
+        } else {
+          alert("Category already exists.");
+        }
+      }
+    });
+
+    // 3. STANDARD INQUIRY DROPDOWN MANAGER
+    function renderAdminInquiryOptionsTable() {
+      const tbody = document.getElementById('inquiryOptionsTableBody');
+      tbody.innerHTML = '';
+      siteConfig.inquiryOptions.forEach((opt, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><input type="text" value="${opt}" onchange="updateInquiryOption(${index}, this.value)"></td>
+          <td><button class="btn btn-danger" style="padding:4px 8px; font-size:0.72rem;" onclick="deleteInquiryOption(${index})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    window.updateInquiryOption = function(idx, val) {
+      if (val.trim()) {
+        siteConfig.inquiryOptions[idx] = val.trim();
+        showToast("Model option updated");
+      }
+    };
+
+    window.deleteInquiryOption = function(idx) {
+      if (siteConfig.inquiryOptions.length <= 1) {
+        alert("You must keep at least one model option.");
+        return;
+      }
+      if (confirm(`Remove "${siteConfig.inquiryOptions[idx]}"?`)) {
+        siteConfig.inquiryOptions.splice(idx, 1);
+        renderAdminInquiryOptionsTable();
+        showToast("Model option removed");
+      }
+    };
+
+    document.getElementById('addInquiryOptionBtn').addEventListener('click', () => {
+      const input = document.getElementById('newInquiryOptionInput');
+      const val = input.value.trim();
+      if (val) {
+        siteConfig.inquiryOptions.push(val);
+        input.value = '';
+        renderAdminInquiryOptionsTable();
+        showToast(`Added model option: ${val}`);
+      }
+    });
+
+    // 4. CUSTOM INQUIRY STRUCTURE DROPDOWN MANAGER
+    function renderAdminCustomOptionsTable() {
+      const tbody = document.getElementById('customOptionsTableBody');
+      tbody.innerHTML = '';
+      siteConfig.customInquiryOptions.forEach((opt, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><input type="text" value="${opt}" onchange="updateCustomOption(${index}, this.value)"></td>
+          <td><button class="btn btn-danger" style="padding:4px 8px; font-size:0.72rem;" onclick="deleteCustomOption(${index})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    window.updateCustomOption = function(idx, val) {
+      if (val.trim()) {
+        siteConfig.customInquiryOptions[idx] = val.trim();
+        showToast("Custom structure updated");
+      }
+    };
+
+    window.deleteCustomOption = function(idx) {
+      if (siteConfig.customInquiryOptions.length <= 1) {
+        alert("You must keep at least one custom structure option.");
+        return;
+      }
+      if (confirm(`Remove "${siteConfig.customInquiryOptions[idx]}"?`)) {
+        siteConfig.customInquiryOptions.splice(idx, 1);
+        renderAdminCustomOptionsTable();
+        showToast("Custom structure removed");
+      }
+    };
+
+    document.getElementById('addCustomOptionBtn').addEventListener('click', () => {
+      const input = document.getElementById('newCustomOptionInput');
+      const val = input.value.trim();
+      if (val) {
+        siteConfig.customInquiryOptions.push(val);
+        input.value = '';
+        renderAdminCustomOptionsTable();
+        showToast(`Added custom type: ${val}`);
+      }
+    });
+
+    // 5. PRODUCT ROWS IN ADMIN
+    function renderAdminProductRows() {
+      const tbody = document.getElementById('adminProductTableBody');
+      tbody.innerHTML = '';
+      siteConfig.products.forEach((prod, idx) => {
+        let catOptionsHtml = siteConfig.categories.map(cat => 
+          `<option value="${cat}" ${prod.category === cat ? 'selected' : ''}>${cat}</option>`
+        ).join('');
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>
+            <img src="${prod.img}" class="img-preview-cell" id="pThumb-${idx}">
+            <input type="file" accept="image/*" style="display:none;" id="pFile-${idx}" onchange="handleProdImgUpload(event, ${idx})">
+            <button class="btn btn-outline" style="padding:2px 5px; font-size:0.65rem; margin-top:3px;" onclick="document.getElementById('pFile-${idx}').click()">Change</button>
+          </td>
+          <td><input type="text" value="${prod.sku}" data-field="sku" data-idx="${idx}"></td>
+          <td><input type="text" value="${prod.title}" data-field="title" data-idx="${idx}"></td>
+          <td><select data-field="category" data-idx="${idx}">${catOptionsHtml}</select></td>
+          <td><input type="text" value="${prod.price}" data-field="price" data-idx="${idx}" style="width:65px;"></td>
+          <td><input type="text" value="${prod.moq}" data-field="moq" data-idx="${idx}" style="width:70px;"></td>
+          <td><input type="text" value="${prod.lining}" data-field="lining" data-idx="${idx}"></td>
+          <td><input type="text" value="${prod.lock}" data-field="lock" data-idx="${idx}"></td>
+          <td><input type="text" value="${prod.capacity}" data-field="capacity" data-idx="${idx}"></td>
+          <td><button class="btn btn-danger" style="padding:4px 8px; font-size:0.7rem;" onclick="removeProductRow(${idx})">Delete</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // IMAGE UPLOAD HANDLERS
+    window.handleLogoChange = function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const r = new FileReader();
+        r.onload = ev => {
+          siteConfig.branding.logo = ev.target.result;
+          document.getElementById('admLogoPreview').src = ev.target.result;
+          showToast("Logo image updated");
+        };
+        r.readAsDataURL(file);
+      }
+    };
+
+    window.handleHeroImgChange = function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const r = new FileReader();
+        r.onload = ev => {
+          siteConfig.hero.cardImg = ev.target.result;
+          document.getElementById('admHeroCardImgPrev').src = ev.target.result;
+          showToast("Hero image updated");
+        };
+        r.readAsDataURL(file);
+      }
+    };
+
+    window.handleProdImgUpload = function(e, idx) {
+      const file = e.target.files[0];
+      if (file) {
+        const r = new FileReader();
+        r.onload = ev => {
+          siteConfig.products[idx].img = ev.target.result;
+          document.getElementById(`pThumb-${idx}`).src = ev.target.result;
+          showToast("Product image updated");
+        };
+        r.readAsDataURL(file);
+      }
+    };
+
+    window.removeProductRow = function(idx) {
+      if (confirm(`Remove item ${siteConfig.products[idx].sku}?`)) {
+        siteConfig.products.splice(idx, 1);
+        renderAdminProductRows();
+      }
+    };
+
+    document.getElementById('addNewProdBtn').addEventListener('click', () => {
+      const defaultCat = siteConfig.categories[0] || "General";
+      siteConfig.products.unshift({
+        id: "TE-ZR-NEW" + (siteConfig.products.length + 1),
+        sku: "TE-ZR-NEW" + (siteConfig.products.length + 1),
+        title: "New Handcrafted Zari Model",
+        category: defaultCat,
+        price: "750",
+        moq: "24 Pcs",
+        lining: "Protective Chawal Lining",
+        lock: "Vintage Brass Latch",
+        capacity: "35-45 Bangles",
+        img: "https://placehold.co/400x300/10121a/d4af37?text=Box+Image"
+      });
+      renderAdminProductRows();
+      showToast("Added blank entry at top of table");
+    });
+
+    // HARVEST AND SAVE ALL ADMIN INPUTS
+    function syncAllAdminInputs() {
+      // 1. Typography Fonts Harvesting
+      document.querySelectorAll('.font-picker').forEach(selectEl => {
+        const key = selectEl.id.replace('font_', '');
+        siteConfig.fonts[key] = selectEl.value;
+      });
+
+      // 2. Branding & Favicon
+      siteConfig.branding.name = document.getElementById('admBrandName').value;
+      siteConfig.branding.tagline = document.getElementById('admBrandTagline').value;
+      siteConfig.branding.navAdminText = document.getElementById('admNavAdminText').value;
+      siteConfig.branding.navWhatsappText = document.getElementById('admNavWhatsappText').value;
+      siteConfig.branding.favicon = document.getElementById('admFaviconUrl').value;
+
+      // 3. Hero
+      siteConfig.hero.badge = document.getElementById('admHeroBadge').value;
+      siteConfig.hero.title = document.getElementById('admHeroTitle').value;
+      siteConfig.hero.desc = document.getElementById('admHeroDesc').value;
+      siteConfig.hero.btn1 = document.getElementById('admHeroBtn1').value;
+      siteConfig.hero.btn2 = document.getElementById('admHeroBtn2').value;
+      siteConfig.hero.cardSku = document.getElementById('admHeroCardSku').value;
+      siteConfig.hero.cardTag = document.getElementById('admHeroCardTag').value;
+      siteConfig.hero.cardTitle = document.getElementById('admHeroCardTitle').value;
+      siteConfig.hero.cardSub = document.getElementById('admHeroCardSub').value;
+      siteConfig.hero.cardPill1 = document.getElementById('admHeroCardPill1').value;
+      siteConfig.hero.cardPill2 = document.getElementById('admHeroCardPill2').value;
+      siteConfig.hero.cardPill3 = document.getElementById('admHeroCardPill3').value;
+
+      // 4. Stats
+      siteConfig.stats.s1Val = document.getElementById('admStat1Val').value;
+      siteConfig.stats.s1Lbl = document.getElementById('admStat1Lbl').value;
+      siteConfig.stats.s2Val = document.getElementById('admStat2Val').value;
+      siteConfig.stats.s2Lbl = document.getElementById('admStat2Lbl').value;
+      siteConfig.stats.s3Val = document.getElementById('admStat3Val').value;
+      siteConfig.stats.s3Lbl = document.getElementById('admStat3Lbl').value;
+      siteConfig.stats.s4Val = document.getElementById('admStat4Val').value;
+      siteConfig.stats.s4Lbl = document.getElementById('admStat4Lbl').value;
+
+      // 5. About
+      siteConfig.about.sub = document.getElementById('admAboutSub').value;
+      siteConfig.about.title = document.getElementById('admAboutTitle').value;
+      siteConfig.about.desc = document.getElementById('admAboutDesc').value;
+      siteConfig.about.f1Title = document.getElementById('admFeat1Title').value;
+      siteConfig.about.f1Desc = document.getElementById('admFeat1Desc').value;
+      siteConfig.about.f2Title = document.getElementById('admFeat2Title').value;
+      siteConfig.about.f2Desc = document.getElementById('admFeat2Desc').value;
+      siteConfig.about.f3Title = document.getElementById('admFeat3Title').value;
+      siteConfig.about.f3Desc = document.getElementById('admFeat3Desc').value;
+
+      // 6. B2B & Checklist
+      siteConfig.b2b.sub = document.getElementById('admB2bSub').value;
+      siteConfig.b2b.title = document.getElementById('admB2bTitle').value;
+      siteConfig.b2b.desc = document.getElementById('admB2bDesc').value;
+      siteConfig.b2b.c1 = document.getElementById('admB2bCheck1').value;
+      siteConfig.b2b.c2 = document.getElementById('admB2bCheck2').value;
+      siteConfig.b2b.c3 = document.getElementById('admB2bCheck3').value;
+      siteConfig.b2b.c4 = document.getElementById('admB2bCheck4').value;
+
+      // 7. Standard Inquiry Section
+      siteConfig.inquiry.title = document.getElementById('admInqTitle').value;
+      siteConfig.inquiry.desc = document.getElementById('admInqDesc').value;
+      siteConfig.inquiry.lblName = document.getElementById('admLblName').value;
+      siteConfig.inquiry.plcName = document.getElementById('admPlcName').value;
+      siteConfig.inquiry.lblModel = document.getElementById('admLblModel').value;
+      siteConfig.inquiry.lblColor = document.getElementById('admLblColor').value;
+      siteConfig.inquiry.lblQty = document.getElementById('admLblQty').value;
+      siteConfig.inquiry.plcQty = document.getElementById('admPlcQty').value;
+      siteConfig.inquiry.lblAddress = document.getElementById('admLblAddress').value;
+      siteConfig.inquiry.plcAddress = document.getElementById('admPlcAddress').value;
+      siteConfig.inquiry.addressRequired = document.getElementById('admChkAddressRequired').checked;
+      siteConfig.inquiry.btnSubmit = document.getElementById('admBtnSubmit').value;
+
+      // 8. Custom Box Inquiry Section (Max 800)
+      siteConfig.customInquiry.title = document.getElementById('admCustTitle').value;
+      siteConfig.customInquiry.desc = document.getElementById('admCustDesc').value;
+      siteConfig.customInquiry.lblName = document.getElementById('admCustLblName').value;
+      siteConfig.customInquiry.lblModel = document.getElementById('admCustLblModel').value;
+      siteConfig.customInquiry.lblColor = document.getElementById('admCustLblColor').value;
+      siteConfig.customInquiry.maxLimit = parseInt(document.getElementById('admCustMaxLimit').value) || 800;
+      siteConfig.customInquiry.lblQty = document.getElementById('admCustLblQty').value;
+      siteConfig.customInquiry.plcQty = document.getElementById('admCustPlcQty').value;
+      siteConfig.customInquiry.lblAddress = document.getElementById('admCustLblAddress').value;
+      siteConfig.customInquiry.plcAddress = document.getElementById('admCustPlcAddress').value;
+      siteConfig.customInquiry.addressRequired = document.getElementById('admCustChkAddressRequired').checked;
+      siteConfig.customInquiry.lblNotes = document.getElementById('admCustLblNotes').value;
+      siteConfig.customInquiry.btnSubmit = document.getElementById('admCustBtnSubmit').value;
+
+      // 9. Contact & PIN
+      siteConfig.contact.phone = document.getElementById('admPhone').value;
+      siteConfig.contact.email = document.getElementById('admEmail').value;
+      siteConfig.contact.address = document.getElementById('admAddress').value;
+      siteConfig.contact.hours = document.getElementById('admHours').value;
+      siteConfig.contact.footerAbout = document.getElementById('admFooterAbout').value;
+      siteConfig.contact.copyright = document.getElementById('admFooterCopy').value;
+      siteConfig.contact.subCopy = document.getElementById('admFooterSubCopy').value;
+      siteConfig.pin = document.getElementById('admPinCode').value || "1234";
+
+      // 10. Product Table Inputs
+      const pInputs = document.getElementById('adminProductTableBody').querySelectorAll('input[data-field], select[data-field]');
+      pInputs.forEach(input => {
+        const idx = input.getAttribute('data-idx');
+        const field = input.getAttribute('data-field');
+        if (siteConfig.products[idx]) {
+          siteConfig.products[idx][field] = input.value;
+        }
+      });
+    }
+
+    document.getElementById('saveAllBtn').addEventListener('click', () => {
+      syncAllAdminInputs();
+      localStorage.setItem('taj_master_config_v4', JSON.stringify(siteConfig));
+      renderWebsite();
+      showToast("All text, fonts, and settings saved successfully!");
+    });
+
+    // EXPORT DOWNLOADABLE FULL HTML
+    document.getElementById('exportFullHtmlBtn').addEventListener('click', () => {
+      syncAllAdminInputs();
+      localStorage.setItem('taj_master_config_v4', JSON.stringify(siteConfig));
+
+      let fullHtml = document.documentElement.outerHTML;
+      const configRegex = /let siteConfig = JSON\.parse\(localStorage\.getItem\('taj_master_config_v4'\)\) \|\| DEFAULT_CONFIG;/;
+      const injectedCode = `let siteConfig = ${JSON.stringify(siteConfig, null, 2)};`;
+
+      const finalizedHtml = "<!DOCTYPE html>\n<html lang=\"en\">\n" +
+        fullHtml.replace(configRegex, injectedCode) +
+        "\n</html>";
+
+      const blob = new Blob([finalizedHtml], { type: 'text/html' });
+      const dlUrl = URL.createObjectURL(blob);
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.href = dlUrl;
+      downloadAnchor.download = "index.html";
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      document.body.removeChild(downloadAnchor);
+      URL.revokeObjectURL(dlUrl);
+      showToast("Downloaded complete updated website file with all custom fonts!");
+    });
+
+    // RESET TO DEFAULTS
+    document.getElementById('resetDefaultsBtn').addEventListener('click', () => {
+      if (confirm("Reset ALL website settings, fonts, categories, inquiry fields, and products back to factory defaults?")) {
+        siteConfig = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+        localStorage.removeItem('taj_master_config_v4');
+        populateAdminInputs();
+        renderWebsite();
+        showToast("Restored all factory defaults.");
+      }
+    });
+
+    // TAB NAVIGATION IN ADMIN
+    document.querySelector('.admin-sidebar').addEventListener('click', (e) => {
+      const btn = e.target.closest('.admin-tab-btn');
+      if (btn) {
+        document.querySelectorAll('.admin-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-tab');
+        document.getElementById(targetId).classList.add('active');
+      }
+    });
+
+    // AUTH CONTROLS
+    document.getElementById('openAdminBtn').addEventListener('click', () => {
+      document.getElementById('adminPinInput').value = '';
+      document.getElementById('authModal').classList.add('active');
+    });
+
+    window.openAdminDirect = function() {
+      document.getElementById('adminPinInput').value = '';
+      document.getElementById('authModal').classList.add('active');
+    };
+
+    document.getElementById('closeAuthBtn').addEventListener('click', () => {
+      document.getElementById('authModal').classList.remove('active');
+    });
+
+    document.getElementById('submitPinBtn').addEventListener('click', verifyPin);
+    document.getElementById('adminPinInput').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') verifyPin();
+    });
+
+    function verifyPin() {
+      const entered = document.getElementById('adminPinInput').value;
+      if (entered === (siteConfig.pin || "1234")) {
+        document.getElementById('authModal').classList.remove('active');
+        populateAdminInputs();
+        document.getElementById('adminModal').classList.add('active');
+      } else {
+        alert("Incorrect PIN. Please try again.");
+      }
+    }
+
+    document.getElementById('closeAdminModalBtn').addEventListener('click', () => {
+      document.getElementById('adminModal').classList.remove('active');
+    });
+
+    // CATALOGUE FILTER PILLS & SEARCH
+    document.getElementById('dynamicFilterPills').addEventListener('click', (e) => {
+      if (e.target.classList.contains('filter-btn')) {
+        document.querySelectorAll('#dynamicFilterPills .filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        currentFilter = e.target.getAttribute('data-filter');
+        renderCatalogue();
+      }
+    });
+
+    document.getElementById('searchInput').addEventListener('input', renderCatalogue);
+
+    // 1. STANDARD FORM SUBMISSION TO WHATSAPP
+    document.getElementById('wholesaleQuoteForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('quoteName').value;
+      const model = document.getElementById('quoteModelDropdown').value;
+      const color = document.getElementById('quoteColorDropdown').value;
+      const qty = document.getElementById('quoteQty').value;
+      const address = document.getElementById('quoteAddress').value;
+
+      if (siteConfig.inquiry.addressRequired && !address.trim()) {
+        alert("Please provide the delivery address to proceed.");
+        return;
+      }
+
+      const message = `*Standard Wholesale Inquiry - ${siteConfig.branding.name}*\n\n` +
+                      `*Buyer Name:* ${name}\n` +
+                      `*Selected Model:* ${model}\n` +
+                      `*Box Color:* ${color}\n` +
+                      `*Order Quantity:* ${qty} Pcs\n` +
+                      `*Delivery Address:* ${address || 'Not specified'}\n\n` +
+                      `Please provide wholesale quotation, availability, and dispatch timeline.`;
+
+      const cleanPhone = siteConfig.contact.phone.replace(/[^0-9]/g, '');
+      window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`, '_blank');
+    });
+
+    // 2. CUSTOM BOX FORM SUBMISSION TO WHATSAPP (WITH 800 UNITS ENFORCED)
+    document.getElementById('customBoxQuoteForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('customName').value;
+      const model = document.getElementById('customModelDropdown').value;
+      const color = document.getElementById('customColorDropdown').value;
+      const qty = parseInt(document.getElementById('customQty').value);
+      const address = document.getElementById('customAddress').value;
+      const notes = document.getElementById('customNotes').value;
+      const maxAllowed = parseInt(siteConfig.customInquiry.maxLimit) || 800;
+
+      if (qty > maxAllowed) {
+        alert(`Maximum order quantity for custom manufacturing runs is limited to ${maxAllowed} units. Please adjust your quantity.`);
+        return;
+      }
+
+      if (siteConfig.customInquiry.addressRequired && !address.trim()) {
+        alert("Delivery address is required for custom manufacturing orders.");
+        return;
+      }
+
+      const message = `*Bespoke Custom Box Inquiry - ${siteConfig.branding.name}*\n\n` +
+                      `*Client / Brand Name:* ${name}\n` +
+                      `*Custom Box Type:* ${model}\n` +
+                      `*Fabric / Color:* ${color}\n` +
+                      `*Batch Quantity:* ${qty} Units (Max ${maxAllowed})\n` +
+                      `*Delivery Destination:* ${address || 'Not specified'}\n` +
+                      `*Custom Specs & Branding:* ${notes || 'None specified'}\n\n` +
+                      `Please verify design feasibility, sample lead time, and bulk costing.`;
+
+      const cleanPhone = siteConfig.contact.phone.replace(/[^0-9]/g, '');
+      window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(message)}`, '_blank');
+    });
+
+    // TOAST NOTIFIER
+    function showToast(msg) {
+      const toast = document.getElementById('toastMessage');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3200);
+    }
+
+    // INITIAL RENDER
+    renderWebsite();
+  </script>
+</body>
+</html>
